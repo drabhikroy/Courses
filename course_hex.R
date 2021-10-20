@@ -19,18 +19,8 @@ library(tidyverse)
 library(RColorBrewer)
 library(hexSticker)
 library(showtext)
-font_add("Jost* Light", "Jost-300-Light.otf")
-font_add("Jost* Medium", "Jost-500-Medium.otf")
-font_add("Jost* Semi", "Jost-600-Semi.otf")
-font_add("Jost* Semi Italic", "Jost-600-SemiItalic.otf")
-font_add("Jost* Bold", "Jost-700-Bold.otf")
-font_add("Jost* Heavy", "Jost-800-Heavy.otf")
-font_add("Jost* Black", "Jost-900-Black.otf")
-font_add("Canela Text Medium", "Canela-Medium.otf")
-font_add("Canela Text Bold", "Canela-Bold.otf")
-font_add("Canela Text Black", "Canela-Black.otf")
+font_add_google("Big Shoulders Inline Text", "bigshoulders", bold.wt = 900)
 showtext_auto()
-
 
 #Read file
 data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-10-20/beer_awards.csv')
@@ -107,14 +97,14 @@ cur <- ggdraw(p2) +
             x=-0.017, 
             y=0.55, 
             width = 0.54, 
-            height = 0.3285) 
-
-cur
+            height = 0.3285); cur
 
 # Save the various types of hex ----
-sticker(cur, 
-        package="EDP 693E", 
-        p_size=7, 
+## Sticker ----
+cursticker <-
+  sticker(cur, 
+        package="Data Visualization", 
+        p_size = 25, 
         p_x = 1,
         p_y = 1.41,
         s_x=1.0, 
@@ -123,35 +113,35 @@ sticker(cur,
         s_height=1.2,
         h_fill="#292A30",
         h_color="#293840",
-        p_family = "Canela Text Black",
-        filename="course_hex.png")
+        p_family = "bigshoulders",
+        p_fontface = "bold",
+        filename="static/img/course_hex.png",
+        dpi = 600)
 
-sticker(cur, 
-        package="EDP 617", 
-        p_size=7, 
-        p_x = 1,
-        p_y = 1.41,
-        s_x=1.0, 
-        s_y=0.75, 
-        s_width=1.2, 
-        s_height=1.2,
-        h_fill="#292A30",
-        h_color="#293840",
-        p_family = "Canela Text Black",
-        filename="hex.png")
+plot(cursticker)
 
-sticker(cur, 
+cursticker
+
+## Blogdown icon ----
+curicon <- 
+  sticker(cur, 
         package="", 
         s_x=1.0, 
         s_y=1.0, 
-        s_width=1.6, 
-        s_height=1.6,
+        s_width=1.3, 
+        s_height=1.3,
         h_fill="#292A30",
         h_color="#293840",
-        filename="icon.png")
+        filename="assets/images/icon.png",
+        dpi = 600)
 
-ggsave("slack_hex.png",
+plot(curicon)
+
+# Slack hex ----
+ggsave("static/img/slack_hex.png",
        cur,
-       bg = "#293840")
+       bg = "#293840",
+       width = 4, 
+       height = 4)
 
 # init adapted from https://github.com/silaarts/TidyTuesday/blob/master/TidyTuesday_Beerawards.R

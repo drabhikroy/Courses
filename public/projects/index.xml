@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Data Visualization</title>
-    <link>https://edp693e.theoreticalphysed.com/projects/</link>
-      <atom:link href="https://edp693e.theoreticalphysed.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edp693e.asocialdatascientist.com/projects/</link>
+      <atom:link href="https://edp693e.asocialdatascientist.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>https://edp693e.theoreticalphysed.com/img/course_info.png</url>
+      <url>https://edp693e.asocialdatascientist.com/img/course_info.png</url>
       <title>Projects</title>
-      <link>https://edp693e.theoreticalphysed.com/projects/</link>
+      <link>https://edp693e.asocialdatascientist.com/projects/</link>
     </image>
     
     <item>
       <title>R Project</title>
-      <link>https://edp693e.theoreticalphysed.com/projects/01-project/</link>
+      <link>https://edp693e.asocialdatascientist.com/projects/01-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/projects/01-project/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/projects/01-project/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -106,11 +106,11 @@
     
     <item>
       <title>Shiny Project</title>
-      <link>https://edp693e.theoreticalphysed.com/projects/02-project/</link>
+      <link>https://edp693e.asocialdatascientist.com/projects/02-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/projects/02-project/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/projects/02-project/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -132,7 +132,7 @@
 &lt;p&gt;In this task, you will use R, in particular RStudio to create a set of interactive visuals based on a predefined data set. &lt;em&gt;Ideally you should work with one you intend to use for your final project.&lt;/em&gt; Please make sure you follow the directions noted below.&lt;/p&gt;
 &lt;div id=&#34;step-i-prospectus&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Step I: Prospectus&lt;/h2&gt;
-&lt;p&gt;Follow the guidelines described in the &lt;a href=&#34;https://edp693e.theoreticalphysed.com/projects/01-project/#step-i-prospectus&#34; target=&#34;_blank&#34;&gt;R Project page&lt;/a&gt;. This submission is due in &lt;strong&gt;one week&lt;/strong&gt; and only applies to you &lt;strong&gt;if there is a change from the data set used in the R Project&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Follow the guidelines described in the &lt;a href=&#34;https://edp693e.asocialdatascientist.com/projects/01-project/#step-i-prospectus&#34; target=&#34;_blank&#34;&gt;R Project page&lt;/a&gt;. This submission is due in &lt;strong&gt;one week&lt;/strong&gt; and only applies to you &lt;strong&gt;if there is a change from the data set used in the R Project&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;step-ii-visualization&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Step II: Visualization&lt;/h2&gt;

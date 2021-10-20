@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About the Lessons | Data Visualization</title>
-    <link>https://edp693e.theoreticalphysed.com/lesson/</link>
-      <atom:link href="https://edp693e.theoreticalphysed.com/lesson/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edp693e.asocialdatascientist.com/lesson/</link>
+      <atom:link href="https://edp693e.asocialdatascientist.com/lesson/index.xml" rel="self" type="application/rss+xml" />
     <description>About the Lessons</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>https://edp693e.theoreticalphysed.com/img/course_info.png</url>
+      <url>https://edp693e.asocialdatascientist.com/img/course_info.png</url>
       <title>About the Lessons</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/</link>
     </image>
     
     <item>
       <title>Scoring Data Camp</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/gradingish/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/gradingish/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/gradingish/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/gradingish/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Remember this is a graduate level class and your work should reflect that&lt;/strong&gt;. It is expected that all problems within the data camp lessons should attempted. While this is not a specific rubric, the following general criteria and benchmarks will be used when assessing your work.&lt;/p&gt;
@@ -113,11 +113,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Shiny Everything</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/11-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/11-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/11-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/11-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -139,10 +139,10 @@ Exercises are unattepted or mostly incomplete.
 &lt;h2&gt;Shiny&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;Oh Look! Shiny Objects&lt;/strong&gt; slideshow is a compact introduction to Shiny&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. You may also want to download&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;an in-class &lt;a href=&#34;https://edp693e.theoreticalphysed.com/data%20scripts/classthing.R&#34; target=&#34;_blank&#34;&gt;example file&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; used to render a Shiny app&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;a &lt;a href=&#34;https://edp693e.theoreticalphysed.com/slides/Shiny/Shiny.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; of the presentation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;an in-class &lt;a href=&#34;https://edp693e.asocialdatascientist.com/data%20scripts/classthing.R&#34; target=&#34;_blank&#34;&gt;example file&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; used to render a Shiny app&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a &lt;a href=&#34;https://edp693e.asocialdatascientist.com/slides/Shiny/Shiny.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; of the presentation.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://edp693e.theoreticalphysed.com/slides/Shiny/Shiny.html&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;iframe src=&#34;https://edp693e.asocialdatascientist.com/slides/Shiny/Shiny.html&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;You can move back and forth using &lt;kbd&gt;←&lt;/kbd&gt; and &lt;kbd&gt;→&lt;/kbd&gt; and toggle fullscreen by pressing &lt;kbd&gt;F&lt;/kbd&gt;. Just press &lt;kbd&gt;O&lt;/kbd&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; at any point in your slideshow and a display of all slides, called tile view, will appear. Click on a slide to go there or press &lt;kbd&gt;O&lt;/kbd&gt; to exit tile view. For more options, press &lt;kbd&gt;H&lt;/kbd&gt; for help.&lt;/p&gt;
 &lt;/div&gt;
@@ -159,11 +159,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Friends Don&#39;t Let Friends Use Pie Charts</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/01-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/01-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/01-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/01-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -180,22 +180,22 @@ Exercises are unattepted or mostly incomplete.
 &lt;div id=&#34;data-camp&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Data Camp&lt;/h2&gt;
 &lt;p&gt;The purpose of these modules is not have you become a programmer! Rather these lay a foundation for a common language and software we’ll be using. Some are better than others and some are more technical than others as well. Just remember, this is not a programming class but you need to ask for help when needed! Falling behind on these can make some material we cover in the course inaccessible. If you get stuck, please search the Internet, ask your peers or me for help or worst case scenario, move on!&lt;/p&gt;
-&lt;p&gt;With that said, please go ahead and start the first module covering the basics of R on &lt;a href=&#34;https://www.datacamp.com/&#34; target=&#34;_blank&#34;&gt;Data Camp&lt;/a&gt;. There is a lot on there and please refer to the &lt;a href=&#34;https://edp693e.theoreticalphysed.com/syllabus/&#34;&gt;syllabus&lt;/a&gt; for the grading policy regarding those tasks.&lt;/p&gt;
+&lt;p&gt;With that said, please go ahead and start the first module covering the basics of R on &lt;a href=&#34;https://www.datacamp.com/&#34; target=&#34;_blank&#34;&gt;Data Camp&lt;/a&gt;. There is a lot on there and please refer to the &lt;a href=&#34;https://edp693e.asocialdatascientist.com/syllabus/&#34;&gt;syllabus&lt;/a&gt; for the grading policy regarding those tasks.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;installing-r-and-rstudio&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Installing R and RStudio&lt;/h2&gt;
-&lt;p&gt;Go to the &lt;a href=&#34;https://edp693e.theoreticalphysed.com/resource/install/&#34;&gt;Installing R, RStudio, and tidyverse&lt;/a&gt; page under Resources to get both R and RStudio installed on your system.&lt;/p&gt;
+&lt;p&gt;Go to the &lt;a href=&#34;https://edp693e.asocialdatascientist.com/resource/install/&#34;&gt;Installing R, RStudio, and tidyverse&lt;/a&gt; page under Resources to get both R and RStudio installed on your system.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Base R is a Thing</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/02-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/02-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/02-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/02-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -217,11 +217,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>ggplotting</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/03-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/03-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/03-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/03-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -242,11 +242,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Tidy Themes</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/04-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/04-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/04-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/04-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -268,11 +268,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Making Copies</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/05-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/05-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/05-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/05-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -294,11 +294,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>I&#39;m the Map</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/06-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/06-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/06-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/06-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -320,11 +320,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>A Map to the Past</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/07-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/07-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/07-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/07-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -345,11 +345,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Hooked on Feelings</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/08-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/08-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/08-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/08-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -370,11 +370,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>The Social Network</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/09-lesson/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/09-lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/09-lesson/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/09-lesson/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -396,11 +396,11 @@ Exercises are unattepted or mostly incomplete.
     
     <item>
       <title>Base Visuals in R</title>
-      <link>https://edp693e.theoreticalphysed.com/lesson/basevisuals/</link>
+      <link>https://edp693e.asocialdatascientist.com/lesson/basevisuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/lesson/basevisuals/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/lesson/basevisuals/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;anything-spss-can-do-r-can-do-better&#34; class=&#34;section level1&#34;&gt;

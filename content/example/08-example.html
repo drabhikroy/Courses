@@ -45,6 +45,7 @@ editor_options:
 <li><a href="#section"></a></li>
 </ul></li>
 </ul></li>
+<li><a href="#word-correlations">Word Correlations</a></li>
 </ul>
 </div>
 
@@ -57,7 +58,7 @@ editor_options:
 <div id="first-things-first-download-the-script-and-data-set" class="section level2">
 <h2>First Things First! Download the script and data set</h2>
 <p>Please download all of the materials needed for this walkthrough and put them all in a folder by themselves.</p>
-<p><a href="/example/08-example_files/Week8materials.zip">Week 8 materials</a></p>
+<p><a href="/data/Week8materials.zip">Week 8 materials</a></p>
 </div>
 <div id="set-your-working-directory" class="section level2">
 <h2>Set your Working Directory</h2>
@@ -147,7 +148,8 @@ A tidyverse package that gives the power to concatenate strings in a way that’
 <h2>Loading Data</h2>
 <p>We’ll be using text data, in particular state of the union speeches. These are annual narratives by the President of the United States given to a joint session of congress. In each, the President reviews the previous year and lays out his legislative agenda for the coming year. This dataset contains the full text of the State of the Union address from 1989 (Reagan) to 2017 (Trump).</p>
 <p>Let’s get a list of the files in the directory</p>
-<pre class="r"><code>files &lt;- list.files(&quot;state-of-the-union-corpus-1989-2017&quot;)
+<pre class="r"><code>files &lt;- 
+  list.files(&quot;state-of-the-union-corpus-1989-2017&quot;)
 
 files</code></pre>
 <pre><code>##  [1] &quot;Bush_1989.txt&quot;    &quot;Bush_1990.txt&quot;    &quot;Bush_1991.txt&quot;    &quot;Bush_1992.txt&quot;   
@@ -162,15 +164,19 @@ files</code></pre>
 <pre class="r"><code>files[1]</code></pre>
 <pre><code>## [1] &quot;Bush_1989.txt&quot;</code></pre>
 <p>Stick together the path to the file and 1st file name</p>
-<pre class="r"><code>fileName &lt;- glue(&quot;state-of-the-union-corpus-1989-2017/&quot;, files[1], sep = &quot;&quot;) %&gt;%
+<pre class="r"><code>fileName &lt;- glue(&quot;state-of-the-union-corpus-1989-2017/&quot;, 
+                 files[1], 
+                 sep = &quot;&quot;) %&gt;%
               trimws()
 
 fileName</code></pre>
 <pre><code>## /Users/skynet/Documents/WVU/Teaching/GitHub.nosync/Workspace/edp693e/static/data/state-of-the-union-corpus-1989-2017Bush_1989.txt</code></pre>
-<p>read in the text and clean it up by removing any dollar signs since they mean something different in R</p>
-<pre class="r"><code>fileText &lt;- glue(read_file(fileName)) 
+<p>read in the text and book_text it up by removing any dollar signs since they mean something different in R</p>
+<pre class="r"><code>fileText &lt;- 
+  glue(read_file(fileName)) 
 
-fileText &lt;- gsub(&quot;\\$&quot;, &quot;&quot;, fileText)
+fileText &lt;- 
+  gsub(&quot;\\$&quot;, &quot;&quot;, fileText)
 
 fileText</code></pre>
 <table>
@@ -284,12 +290,12 @@ Thank you. God bless you, and God bless America.
 <div id="tokenize" class="section level3">
 <h3>Tokenize</h3>
 <p><em>Tokenization</em> is process of taking a bunch of characters (i.e. strings) and chopping the up into little pieces called <em>tokens</em>. Notice that actual “words” are not necessary here. This is important because it will allow us to use parts of words as you’ll see soon!</p>
-<pre class="r"><code>tokens &lt;- data_frame(text = fileText) %&gt;% 
-              unnest_tokens(word, text)</code></pre>
-<pre><code>## Warning: `data_frame()` was deprecated in tibble 1.1.0.
-## Please use `tibble()` instead.</code></pre>
-<pre class="r"><code>tokens</code></pre>
-<pre><code>## # A tibble: 4,822 x 1
+<pre class="r"><code>tokens &lt;- 
+  tibble(text = fileText) %&gt;% 
+  unnest_tokens(word, text)
+
+tokens</code></pre>
+<pre><code>## # A tibble: 4,822 × 1
 ##    word         
 ##    &lt;chr&gt;        
 ##  1 mr           
@@ -309,13 +315,29 @@ Thank you. God bless you, and God bless America.
 <p>In text analysis, we tend to remove <em>stop words</em> which are terms that are not useful for an analysis like “and”, “of”, “the”, etc. Here we use <code>anti_join()</code> to get rid of those terms from our data set.</p>
 <pre class="r"><code>data(stop_words)
 
-tidy_tokens &lt;- tokens %&gt;%
-               anti_join(stop_words)</code></pre>
-<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+tidy_tokens &lt;- 
+  tokens %&gt;%
+  anti_join(stop_words)
+
+tidy_tokens</code></pre>
+<pre><code>## # A tibble: 1,886 × 1
+##    word         
+##    &lt;chr&gt;        
+##  1 speaker      
+##  2 president    
+##  3 distinguished
+##  4 house        
+##  5 senate       
+##  6 honored      
+##  7 guests       
+##  8 fellow       
+##  9 citizens     
+## 10 3            
+## # … with 1,876 more rows</code></pre>
 <p>Let’s see a count of the remaining terms</p>
 <pre class="r"><code>tidy_tokens %&gt;%
   count(word, sort = TRUE) </code></pre>
-<pre><code>## # A tibble: 1,097 x 2
+<pre><code>## # A tibble: 1,097 × 2
 ##    word          n
 ##    &lt;chr&gt;     &lt;int&gt;
 ##  1 america      24
@@ -337,7 +359,8 @@ tidy_tokens &lt;- tokens %&gt;%
   ggplot(aes(n, word, fill=n)) +
   geom_col() +
   theme_minimal() +
-  labs(y = NULL)</code></pre>
+  labs(y = NULL) +
+  scale_fill_viridis_c(option = &quot;E&quot;)</code></pre>
 <p><img src="/example/08-example_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 </div>
 <div id="find-polarities" class="section level3">
@@ -349,10 +372,10 @@ speech_bing_descriptives &lt;- tokens %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;% # pull out only sentiment words
   count(sentiment) %&gt;% # count the # of positive &amp; negative words
   spread(sentiment, n, fill = 0) %&gt;% # made data wide rather than narrow
-  mutate(sentiment = positive - negative) # of positive words - # of negative words</code></pre>
-<pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<pre class="r"><code>speech_bing_descriptives</code></pre>
-<pre><code>## # A tibble: 1 x 3
+  mutate(sentiment = positive - negative) # of positive words - # of negative words
+
+speech_bing_descriptives</code></pre>
+<pre><code>## # A tibble: 1 × 3
 ##   negative positive sentiment
 ##      &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
 ## 1      117      240       123</code></pre>
@@ -361,11 +384,18 @@ speech_bing_descriptives &lt;- tokens %&gt;%
 </div>
 <div id="another-example" class="section level2">
 <h2>Another Example</h2>
-<p>The Harry Potter R package <code>harrypotter</code> on GitHub contains the text for all seven books in the Harry Potter series, by JK Rowling. Below, I have included the code required to connect to the ackage using <code>devtools</code>, as well as the other packages required for the basic text analytics.</p>
+<p>The Harry Potter R package <code>harrypotter</code> on GitHub contains the text for all seven books in the Harry Potter series, by JK Rowling. Below, I have included the code required to connect to the package using <code>devtools</code>, as well as the other packages required for the basic text analytics.</p>
 <div id="section" class="section level3">
 <h3></h3>
 <p>Loading libraries</p>
 <p>Go ahead and load these or install and then load them.</p>
+<p>There is a <code>harrypotter</code> package on CRAN <strong><em>but that is not the one we want</em></strong>. Please run the following instead<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
+<pre class="r"><code>if (packageVersion(&quot;devtools&quot;) &lt; 1.6) {
+  install.packages(&quot;devtools&quot;)
+}
+
+devtools::install_github(&quot;bradleyboehmke/harrypotter&quot;, 
+                         force = TRUE)</code></pre>
 <pre class="r"><code>library(wordcloud)
 library(devtools)
 library(tidyverse)      
@@ -374,37 +404,53 @@ library(tidytext)
 library(dplyr)
 library(reshape2)
 library(igraph)
+library(tidygraph)
 library(ggraph)
-library(harrypotter)</code></pre>
-<p>After downloading the data from the harrypotter package on github, we can do a bit of data shaping. The code below places all of the books in the Harry Potter series into a tibble. A tibble is kind of like a data frame, but it has special features that make it optimal for use in the tidyverse. After creating our tibble, we tokenize the text into single words, strip away all punctuation and capitalization, and add columns to the tibble for the book and chapter. In the resulting tibble, you can see each word from the Harry Potter series, and the book/chapter in which it appears.</p>
-<pre class="r"><code>titles &lt;- c(&quot;Philosopher&#39;s Stone&quot;, &quot;Chamber of Secrets&quot;, &quot;Prisoner of Azkaban&quot;,
-            &quot;Goblet of Fire&quot;, &quot;Order of the Phoenix&quot;, &quot;Half-Blood Prince&quot;,
+library(harrypotter)
+library(widyr)
+library(RColorBrewer)
+library(viridis)</code></pre>
+<p>After downloading the data from the <code>harrypotter</code> package on github, we can do a bit of data shaping. The code below places all of the books in the Harry Potter series into a tibble. A tibble is kind of like a data frame, but it has special features that make it optimal for use in the tidyverse. After creating our tibble, we <strong>tokenize</strong> the text into single words, strip away all punctuation and capitalization, and add columns to the tibble for the book and chapter. In the resulting tibble, you can see each word from the Harry Potter series, and the book/chapter in which it appears.</p>
+<pre class="r"><code># note the titles 
+titles &lt;- c(&quot;Philosopher\&#39;s Stone&quot;, 
+            &quot;Chamber of Secrets&quot;, 
+            &quot;Prisoner of Azkaban&quot;,
+            &quot;Goblet of Fire&quot;, 
+            &quot;Order of the Phoenix&quot;, 
+            &quot;Half-Blood Prince&quot;,
             &quot;Deathly Hallows&quot;)
 
-books &lt;- list(philosophers_stone, chamber_of_secrets, prisoner_of_azkaban,
-           goblet_of_fire, order_of_the_phoenix, half_blood_prince,
-           deathly_hallows)
-  
+titles</code></pre>
+<pre><code>## [1] &quot;Philosopher&#39;s Stone&quot;  &quot;Chamber of Secrets&quot;   &quot;Prisoner of Azkaban&quot; 
+## [4] &quot;Goblet of Fire&quot;       &quot;Order of the Phoenix&quot; &quot;Half-Blood Prince&quot;   
+## [7] &quot;Deathly Hallows&quot;</code></pre>
+<pre class="r"><code># note the data frames 
+books &lt;- list(philosophers_stone, 
+              chamber_of_secrets, 
+              prisoner_of_azkaban,
+              goblet_of_fire, 
+              order_of_the_phoenix, 
+              half_blood_prince,
+              deathly_hallows)</code></pre>
+<pre class="r"><code># go through the texts and tokenize
 series &lt;- tibble()
 
 for(i in seq_along(titles)) {
-        
-        clean &lt;- tibble(chapter = seq_along(books[[i]]),
-                        text = books[[i]]) %&gt;%
-             unnest_tokens(word, text) %&gt;%
-             mutate(book = titles[i]) %&gt;%
-             select(book, everything())
-
-        series &lt;- rbind(series, clean)
+  
+  clean &lt;- 
+    tibble(chapter = seq_along(books[[i]]),
+           text = books[[i]]) %&gt;%
+    unnest_tokens(word, text) %&gt;%
+    mutate(book = titles[i]) %&gt;%
+    select(book, everything())
+  
+  series &lt;- rbind(series, clean)
 }
 
-# set factor to keep books in order of publication
-series$book &lt;- factor(series$book, levels = rev(titles))
-
-series</code></pre>
-<pre><code>## # A tibble: 1,089,386 x 3
+series </code></pre>
+<pre><code>## # A tibble: 1,089,386 × 3
 ##    book                chapter word   
-##    &lt;fct&gt;                 &lt;int&gt; &lt;chr&gt;  
+##    &lt;chr&gt;                 &lt;int&gt; &lt;chr&gt;  
 ##  1 Philosopher&#39;s Stone       1 the    
 ##  2 Philosopher&#39;s Stone       1 boy    
 ##  3 Philosopher&#39;s Stone       1 who    
@@ -416,9 +462,32 @@ series</code></pre>
 ##  9 Philosopher&#39;s Stone       1 of     
 ## 10 Philosopher&#39;s Stone       1 number 
 ## # … with 1,089,376 more rows</code></pre>
+<pre class="r"><code># set factor to keep books in release order
+reverse_series &lt;- 
+  series %&gt;%
+  mutate(book = factor(book, 
+                       levels = rev(titles))) %&gt;%
+  arrange(book)
+
+reverse_series</code></pre>
+<pre><code>## # A tibble: 1,089,386 × 3
+##    book            chapter word    
+##    &lt;fct&gt;             &lt;int&gt; &lt;chr&gt;   
+##  1 Deathly Hallows       1 the     
+##  2 Deathly Hallows       1 two     
+##  3 Deathly Hallows       1 men     
+##  4 Deathly Hallows       1 appeared
+##  5 Deathly Hallows       1 out     
+##  6 Deathly Hallows       1 of      
+##  7 Deathly Hallows       1 nowhere 
+##  8 Deathly Hallows       1 a       
+##  9 Deathly Hallows       1 few     
+## 10 Deathly Hallows       1 yards   
+## # … with 1,089,376 more rows</code></pre>
 <p>We can get simple counts for each word using the count function. The word “the” occurs 51593 times in the Harry Potter series.</p>
-<pre class="r"><code>series %&gt;% count(word, sort = TRUE)</code></pre>
-<pre><code>## # A tibble: 24,475 x 2
+<pre class="r"><code>reverse_series %&gt;% 
+  count(word, sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 24,475 × 2
 ##    word      n
 ##    &lt;chr&gt; &lt;int&gt;
 ##  1 the   51593
@@ -432,103 +501,132 @@ series</code></pre>
 ##  9 said  14398
 ## 10 his   14264
 ## # … with 24,465 more rows</code></pre>
-<p>Many of the words in the top ten most frequently appearing words are stop-words such as “the”, “and”, “to”, etc., so let’s discard those for now. Below, you can see a word cloud showing the most frequently occurring non-stop words in the series. The cloud contains the top 100 most frequently occurring words, and the larger a word appears in the cloud, the more frequently that word occurred in the text. It comes as no surprise to Harry Potter readers that most of the largest words in the cloud are names like “Harry”, “Ron” and “Hermione”.</p>
-<pre class="r"><code>series$book &lt;- factor(series$book, levels = rev(titles))
-
-series %&gt;% 
+<p>Many of the words in the top ten most frequently appearing words are stop-words such as “the”, “and”, “to”, etc., so let’s discard those for now. Below, you can see a word cloud showing the most frequently occurring non-stop words in the series. The cloud contains the top 50 most frequently occurring words, and the larger a word appears in the cloud, the more frequently that word occurred in the text. It comes as no surprise to Harry Potter readers that most of the largest words in the cloud are names like “Harry”, “Ron” and “Hermione”.</p>
+<pre class="r"><code>reverse_series %&gt;% 
   anti_join(stop_words) %&gt;%
-  count(word) %&gt;%
-  with(wordcloud(word, n, max.words = 100))</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-20-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>Now we can begin the sentiment analysis. For this portion, we will continue working with the text that contains stop-words. The basic motivation behind sentiment analysis is to assess how positive or negative text is, based on a dictionary of words that have been previously classified as positive or negative. This type of dictionary is called a sentiment lexicon. The tidyverse has several built in lexicons for sentiment analysis, but for this example we will stick with ‘nrc’ and ‘bing’. The ‘nrc’ is a more advanced lexicon that categorizes words into several sentiment categories - <em>sadness</em>, <em>anger</em>, <em>positive</em>, <em>negative</em>, <em>trust</em>, etc. A single word in this lexicon may fall into multiple categories. Using the following code, we can get counts for the number of words in the Harry Potter series that fall into each of the categories addressed by ‘nrc’. In the output, you can see that there were 56579 words in the series that are classified as ‘negative’ by the ‘nrc’ lexicon. Overall, it looks like there are more negative words in the series than positive words. There are also a lot of words related to anger and sadness.</p>
+  count(word,
+        name = &quot;frequency&quot;) %&gt;%
+  with(wordcloud(word, 
+                 frequency, 
+                 max.words = 50,
+                 colors = rev(brewer.pal(9,&quot;Spectral&quot;))))</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-24-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Now we can begin the sentiment analysis. For this portion, we will continue working with the text that contains stop-words. The basic motivation behind sentiment analysis is to assess how positive or negative text is, based on a dictionary of words that have been previously classified as positive or negative. This type of dictionary is called a sentiment lexicon. The tidyverse has several built in lexicons for sentiment analysis, but for this example we will stick with ‘nrc’ and ‘bing’.The ‘nrc’ is a more advanced lexicon that categorizes words into several sentiment categories - <em>sadness</em>, <em>anger</em>, <em>positive</em>, <em>negative</em>, <em>trust</em>, etc. A single word in this lexicon may fall into multiple categories. Using the following code, we can get counts for the number of words in the Harry Potter series that fall into each of the categories addressed by ‘nrc’. In the output, you can see that there were 56579 words in the series that are classified as ‘negative’ by the ‘nrc’ lexicon. Overall, it looks like there are more negative words in the series than positive words. There are also a lot of words related to anger and sadness.</p>
 <p>Get the lexicons we’ll be using by running these. You only have to do this once!</p>
 <pre class="r"><code>get_sentiments(&quot;afinn&quot;)
 get_sentiments(&quot;bing&quot;)
 get_sentiments(&quot;nrc&quot;)</code></pre>
-<p>And then tp see the in action</p>
-<pre class="r"><code>series %&gt;%
+<p>And then to see the in action</p>
+<pre class="r"><code>reverse_series %&gt;%
   right_join(get_sentiments(&quot;nrc&quot;)) %&gt;%
   filter(!is.na(sentiment)) %&gt;%
-  count(sentiment, sort = TRUE)</code></pre>
-<pre><code>## # A tibble: 10 x 2
+  count(sentiment, 
+        sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 10 × 2
 ##    sentiment        n
 ##    &lt;chr&gt;        &lt;int&gt;
-##  1 negative     56579
-##  2 positive     38324
-##  3 sadness      35866
-##  4 anger        32750
-##  5 trust        23485
-##  6 fear         21544
-##  7 anticipation 21123
-##  8 joy          14298
-##  9 disgust      13381
-## 10 surprise     12991</code></pre>
+##  1 negative     55093
+##  2 positive     37758
+##  3 sadness      34878
+##  4 anger        32743
+##  5 trust        23154
+##  6 fear         21536
+##  7 anticipation 20625
+##  8 joy          13800
+##  9 disgust      12861
+## 10 surprise     12817</code></pre>
 <p>The ‘bing’ lexicon only classifies words as positive or negative. Below you can see that this lexicon picked up 39503 negative words in the Harry Potter series, and 29066 positive words.</p>
-<pre class="r"><code>series %&gt;%
+<pre class="r"><code>reverse_series %&gt;%
   right_join(get_sentiments(&quot;bing&quot;)) %&gt;%
-  filter(!is.na(sentiment)) %&gt;%
-  count(sentiment, sort = TRUE)</code></pre>
-<pre><code>## # A tibble: 2 x 2
+  drop_na(sentiment) %&gt;%
+  count(sentiment, 
+        sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 2 × 2
 ##   sentiment     n
 ##   &lt;chr&gt;     &lt;int&gt;
 ## 1 negative  39502
 ## 2 positive  29065</code></pre>
-<p>Similarly to the word cloud we created above, we can use the ‘bing’ lexicon to make a comparison cloud. This cloud displays the 50 most frequently occurring words in the series that were categorized by ‘bing’, and color-codes them based on negative or positive sentiment. You’ll notice that words like “Harry”“,”Hermione" and “Ron” don’t appear in this cloud, because character names are not classified as positive or negative in ‘bing’.</p>
-<pre class="r"><code>series %&gt;%
+<p>Similarly to the word cloud we created above, we can use the ‘bing’ lexicon to make a comparison cloud. This cloud displays the 50 most frequently occurring words in the series that were categorized by ‘bing’, and color-codes them based on negative or positive sentiment. You’ll notice that words like <em>Harry</em>, <em>Hermione</em> and <em>Ron</em> don’t appear in this cloud, because character names are not classified as positive or negative in ‘bing’.</p>
+<pre class="r"><code>reverse_series %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
-  count(word, sentiment, sort = TRUE) %&gt;%
-  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
-  comparison.cloud(colors = c(&quot;#F8766D&quot;, &quot;#00BFC4&quot;),
+  count(word, sentiment, 
+        sort = TRUE) %&gt;%
+  acast(word ~ sentiment, 
+        value.var = &quot;n&quot;, 
+        fill = 0) %&gt;%
+  comparison.cloud(colors = c(&quot;#d9534f&quot;, &quot;#428bca&quot;),
                    max.words = 50)</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-24-1.png" width="672" style="display: block; margin: auto;" /></p>
-<div style="page-break-after: always;"></div>
-<p>Now, let’s see what the comparison cloud looks like with stop-words removed temporarily.</p>
-<pre class="r"><code>series %&gt;%
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-28-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Now, let’s see what the comparison cloud looks like with stop-words removed temporarily<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<pre class="r"><code>reverse_series %&gt;%
   anti_join(stop_words) %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
-  count(word, sentiment, sort = TRUE) %&gt;%
-  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
-  comparison.cloud(colors = c(&quot;#F8766D&quot;, &quot;#00BFC4&quot;),
-                   max.words = 50)</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-25-1.png" width="672" style="display: block; margin: auto;" /></p>
+  count(word, 
+        sentiment, 
+        sort = TRUE) %&gt;%
+  mutate(sentiment = factor(sentiment, levels = c(&quot;positive&quot;, &quot;negative&quot;))) %&gt;%
+  acast(word ~ sentiment, 
+        value.var = &quot;n&quot;, 
+        fill = 0) %&gt;%
+  comparison.cloud(max.words = 50,
+                   scale = c(3,.3),
+                   title.bg.colors=&quot;transparent&quot;,
+                   colors = c(&quot;#428bca&quot;, &quot;#d9534f&quot;),
+                   match.colors = TRUE,
+                   use.r.layout = TRUE, 
+                   title.size = 2)</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-29-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>In the following code chunk, each book text is split into groups of 500 words, and counts for the number of positive and negative words in each group (based on the ‘bing’ lexicon) are calculated. Then we subtract the number of negative words from the number of positive words in each group. For example, if there were 341 positive words in a group and 159 negative words in the same group, the sentiment score for the group would be 182 (a positive sentiment score). We calculate this sentiment score for each 500 word group within each book in the series. Using ggplot, we create bar charts for each book in the series that demonstrate how the sentiment score for the text groups changes as time passes in the series. Overall, the sentiment of the Harry Potter series appears to be negative.</p>
 <p>Challenges: How do these plots change if you go back and leave all of the stop-words in the tibble? Does the size of the text groups (500 words vs. 1000 words) affect the analysis?</p>
 <p>As a next step, one might look at the maximum sentiment score and the minimum sentiment score for each book to see what text groups produced the extreme scores.</p>
-<pre class="r"><code>series %&gt;%
+<pre class="r"><code>reverse_series %&gt;%
   group_by(book) %&gt;% 
   mutate(word_count = 1:n(),
          index = word_count %/% 500 + 1) %&gt;% 
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
-  count(book, index = index , sentiment) %&gt;%
+  count(book, 
+        index = index , 
+        sentiment) %&gt;%
   ungroup() %&gt;%
-  spread(sentiment, n, fill = 0) %&gt;%
+  spread(sentiment, 
+         n, 
+         fill = 0) %&gt;%
   mutate(sentiment = positive - negative,
-         book = factor(book, levels = titles)) %&gt;%
-  ggplot(aes(index, sentiment, fill = book)) +
-  geom_bar(alpha = 0.5, stat = &quot;identity&quot;, show.legend = FALSE) +
-  facet_wrap(~ book, ncol = 2, scales = &quot;free_x&quot;)</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+         book = factor(book, 
+                       levels = titles)) %&gt;%
+  ggplot(aes(index, 
+             sentiment, 
+             fill = book)) +
+  geom_bar(alpha = 0.5, 
+           stat = &quot;identity&quot;, 
+           show.legend = FALSE) +
+  facet_wrap(. ~ book, 
+             ncol = 2, 
+             scales = &quot;free_x&quot;) +
+  theme_minimal() +
+  scale_fill_viridis(discrete = &quot;TRUE&quot;,
+                     option = &quot;C&quot;)</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 <p>Using single words as tokens for sentiment analysis can be less than ideal. This is because nearby words add context - in particular, negations make the analysis tricky. For example, the word “good” is a positive word. However, “My day was not good” has a negative sentiment, despite the presence of the word “good”. A better example for the Harry Potter series would be that “magic” is considered to be a positive word, but “dark magic” would be have a negative meaning. For further analysis of our Harry Potter text, let’s look at pairs of words (bigrams). A bigram is a pair of words that appear consecutively in a text. For example, if we look at the sentence “I ate purple grapes”, the bigrams we can extract would be (I, ate), (ate, purple), and (purple, grapes). In the following code chunk, I repeat the process of shaping the text data from the beginning of the document, but this time I specify that bigrams should be used to tokenize the text rather than single words.</p>
-<pre class="r"><code>series &lt;- tibble()
+<pre class="r"><code># determine bigrams
+bigram_series &lt;- tibble()
 
 for(i in seq_along(titles)) {
   
   temp &lt;- tibble(chapter = seq_along(books[[i]]),
                   text = books[[i]]) %&gt;%
     unnest_tokens(bigram, text, token = &quot;ngrams&quot;, n = 2) %&gt;%
-    ##Here we tokenize each chapter into bigrams
+    ## Here we tokenize each chapter into bigrams
     mutate(book = titles[i]) %&gt;%
     select(book, everything())
   
-  series &lt;- rbind(series, temp)
+  bigram_series &lt;- rbind(bigram_series, temp)
 }
 
-# set factor to keep books in order of publication
-series$book &lt;- factor(series$book, levels = rev(titles))
-series</code></pre>
-<pre><code>## # A tibble: 1,089,186 x 3
+bigram_series</code></pre>
+<pre><code>## # A tibble: 1,089,186 × 3
 ##    book                chapter bigram     
-##    &lt;fct&gt;                 &lt;int&gt; &lt;chr&gt;      
+##    &lt;chr&gt;                 &lt;int&gt; &lt;chr&gt;      
 ##  1 Philosopher&#39;s Stone       1 the boy    
 ##  2 Philosopher&#39;s Stone       1 boy who    
 ##  3 Philosopher&#39;s Stone       1 who lived  
@@ -540,10 +638,32 @@ series</code></pre>
 ##  9 Philosopher&#39;s Stone       1 of number  
 ## 10 Philosopher&#39;s Stone       1 number four
 ## # … with 1,089,176 more rows</code></pre>
+<pre class="r"><code># set factor to keep books in release order
+reverse_bigram_series &lt;- 
+  bigram_series %&gt;%
+  mutate(book = factor(book, levels = rev(unique(book)))) %&gt;%
+  arrange(book)
+
+reverse_bigram_series</code></pre>
+<pre><code>## # A tibble: 1,089,186 × 3
+##    book            chapter bigram      
+##    &lt;fct&gt;             &lt;int&gt; &lt;chr&gt;       
+##  1 Deathly Hallows       1 the two     
+##  2 Deathly Hallows       1 two men     
+##  3 Deathly Hallows       1 men appeared
+##  4 Deathly Hallows       1 appeared out
+##  5 Deathly Hallows       1 out of      
+##  6 Deathly Hallows       1 of nowhere  
+##  7 Deathly Hallows       1 nowhere a   
+##  8 Deathly Hallows       1 a few       
+##  9 Deathly Hallows       1 few yards   
+## 10 Deathly Hallows       1 yards apart 
+## # … with 1,089,176 more rows</code></pre>
 <p>Again, we can use the count function to find the most common bigrams in the series.</p>
-<pre class="r"><code>series %&gt;%
-  count(bigram, sort = TRUE)</code></pre>
-<pre><code>## # A tibble: 340,021 x 2
+<pre class="r"><code>reverse_bigram_series %&gt;%
+  count(bigram, 
+        sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 340,021 × 2
 ##    bigram         n
 ##    &lt;chr&gt;      &lt;int&gt;
 ##  1 of the      4895
@@ -558,28 +678,100 @@ series</code></pre>
 ## 10 out of      1911
 ## # … with 340,011 more rows</code></pre>
 <p>As we saw with the single words, most of the most common bigrams contain stop-words. Let’s remove those from our bigram tibble.</p>
-<pre class="r"><code>bigrams_separated &lt;- series %&gt;%
-  separate(bigram, c(&quot;word1&quot;, &quot;word2&quot;), sep = &quot; &quot;)
+<pre class="r"><code># separate the terms to edit them out
+bigrams_separated &lt;- 
+  reverse_bigram_series %&gt;%
+  separate(bigram, 
+           c(&quot;word1&quot;, &quot;word2&quot;), 
+           sep = &quot; &quot;)
 
-bigrams_filtered &lt;- bigrams_separated %&gt;%
+bigrams_separated</code></pre>
+<pre><code>## # A tibble: 1,089,186 × 4
+##    book            chapter word1    word2   
+##    &lt;fct&gt;             &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;   
+##  1 Deathly Hallows       1 the      two     
+##  2 Deathly Hallows       1 two      men     
+##  3 Deathly Hallows       1 men      appeared
+##  4 Deathly Hallows       1 appeared out     
+##  5 Deathly Hallows       1 out      of      
+##  6 Deathly Hallows       1 of       nowhere 
+##  7 Deathly Hallows       1 nowhere  a       
+##  8 Deathly Hallows       1 a        few     
+##  9 Deathly Hallows       1 few      yards   
+## 10 Deathly Hallows       1 yards    apart   
+## # … with 1,089,176 more rows</code></pre>
+<pre class="r"><code># remove stop words from each
+bigrams_filtered &lt;- 
+  bigrams_separated %&gt;%
   filter(!word1 %in% stop_words$word) %&gt;%
   filter(!word2 %in% stop_words$word)
 
-# new bigram counts:
-bigrams_united &lt;- bigrams_filtered %&gt;%
+bigrams_filtered</code></pre>
+<pre><code>## # A tibble: 137,629 × 4
+##    book            chapter word1     word2    
+##    &lt;fct&gt;             &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;    
+##  1 Deathly Hallows       1 narrow    moonlit  
+##  2 Deathly Hallows       1 moonlit   lane     
+##  3 Deathly Hallows       1 wands     directed 
+##  4 Deathly Hallows       1 other&#39;s   chests   
+##  5 Deathly Hallows       1 wands     beneath  
+##  6 Deathly Hallows       1 started   walking  
+##  7 Deathly Hallows       1 walking   briskly  
+##  8 Deathly Hallows       1 direction news     
+##  9 Deathly Hallows       1 replied   severus  
+## 10 Deathly Hallows       1 severus   snape.the
+## # … with 137,619 more rows</code></pre>
+<pre class="r"><code># merge the word columns back together to form bigrams
+bigrams_united &lt;- 
+  bigrams_filtered %&gt;%
   unite(bigram, word1, word2, sep = &quot; &quot;)
 
-bigram_counts &lt;- bigrams_united %&gt;% 
-    count(bigram, sort = TRUE)</code></pre>
+bigrams_united</code></pre>
+<pre><code>## # A tibble: 137,629 × 3
+##    book            chapter bigram           
+##    &lt;fct&gt;             &lt;int&gt; &lt;chr&gt;            
+##  1 Deathly Hallows       1 narrow moonlit   
+##  2 Deathly Hallows       1 moonlit lane     
+##  3 Deathly Hallows       1 wands directed   
+##  4 Deathly Hallows       1 other&#39;s chests   
+##  5 Deathly Hallows       1 wands beneath    
+##  6 Deathly Hallows       1 started walking  
+##  7 Deathly Hallows       1 walking briskly  
+##  8 Deathly Hallows       1 direction news   
+##  9 Deathly Hallows       1 replied severus  
+## 10 Deathly Hallows       1 severus snape.the
+## # … with 137,619 more rows</code></pre>
+<pre class="r"><code># count the updated bigrams
+bigram_counts &lt;- 
+  bigrams_united %&gt;% 
+    count(bigram, sort = TRUE)
+
+bigram_counts</code></pre>
+<pre><code>## # A tibble: 89,120 × 2
+##    bigram                   n
+##    &lt;chr&gt;                &lt;int&gt;
+##  1 professor mcgonagall   578
+##  2 uncle vernon           386
+##  3 harry potter           349
+##  4 death eaters           346
+##  5 harry looked           316
+##  6 harry ron              302
+##  7 aunt petunia           206
+##  8 invisibility cloak     192
+##  9 professor trelawney    177
+## 10 dark arts              176
+## # … with 89,110 more rows</code></pre>
 <p>Now that we have removed the stop-words, we can see that the most frequently occurring bigram in the series is “Professor McGonagall”. The only bigrams in the top ten that don’t contain character names are “Death Eaters”, “Invisibility Cloak” and “Dark Arts”.</p>
-<p>Now, let’s use our bigrams to practice tf-idf (term frequency -inverse document frequency). In a nutshell, tf-idf is an analysis that seeks to identify how common a word is in a particular text, given how often it occurs in a group of texts. For example, Professor Lupin was a very prominent character in “The Prisoner of Azkaban”“, but not so much in the other books (and in the other books, he was not a professor). A person who had not read all of the books could determine this by simply counting the number of times the name”Professor Lupin" occurs in “The Prisoner of Azkaban” and comparing that number to the frequency of that bigram in the rest of the books in the series. To quantify this idea, the term frequency (the number of times a token appears in a document divided by the total number of tokens in the document) is multiplied by the inverse document frequency (the total number of documents divided by the number of documents containing the token). The chart below displays the ten bigrams with the highest tf-idf scores among the seven books in the series. “Professor Umbridge”, has the highest tf-idf score relative to “The Order of the Phoenix”. Any Harry Potter lover can tell you that we first meet Professor Umbridge in “The Order of the Phoenix”, in which and she plays a major role. In the other books in the series, her role ranges from small to non-existent. Thus, it makes sense that “Professor Umbridge” has a relatively high tf-idf score. Beneath the chart, I have created a visual for the bigrams with the highest tf-idf scores.</p>
-<pre class="r"><code>bigram_tf_idf &lt;- bigrams_united %&gt;%
+<p>Now, let’s use our bigrams to practice <em>tf-idf</em> (<em>term frequency-inverse document frequency</em>). In a nutshell, <em>tf-idf</em> is an analysis that seeks to identify how common a word is in a particular text, given how often it occurs in a group of texts. For example, Professor Lupin was a very prominent character in “The Prisoner of Azkaban”“, but not so much in the other books (and in the other books, he was not a professor). A person who had not read all of the books could determine this by simply counting the number of times the name”Professor Lupin” occurs in “The Prisoner of Azkaban” and comparing that number to the frequency of that bigram in the rest of the books in the series. To quantify this idea, the term frequency (the number of times a token appears in a document divided by the total number of tokens in the document) is multiplied by the inverse document frequency (the total number of documents divided by the number of documents containing the token). The chart below displays the ten bigrams with the highest <em>tf-idf</em> scores among the seven books in the series. “Professor Umbridge”, has the highest <em>tf-idf</em> score relative to “The Order of the Phoenix”. Any Harry Potter lover can tell you that we first meet Professor Umbridge in “The Order of the Phoenix”, in which and she plays a major role. In the other books in the series, her role ranges from small to non-existent. Thus, it makes sense that “Professor Umbridge” has a relatively high <em>tf-idf</em> score. Beneath the chart, there is a visual for the bigrams with the highest <em>tf-idf</em> scores.</p>
+<pre class="r"><code># measure tf-idf
+bigram_tf_idf &lt;- 
+  bigrams_united %&gt;%
   count(book, bigram) %&gt;%
   bind_tf_idf(bigram, book, n) %&gt;%
   arrange(desc(tf_idf))
 
 bigram_tf_idf</code></pre>
-<pre><code>## # A tibble: 107,016 x 6
+<pre><code>## # A tibble: 107,016 × 6
 ##    book                 bigram                 n      tf   idf  tf_idf
 ##    &lt;fct&gt;                &lt;chr&gt;              &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
 ##  1 Order of the Phoenix professor umbridge   173 0.00533 1.25  0.00667
@@ -593,22 +785,33 @@ bigram_tf_idf</code></pre>
 ##  9 Half-Blood Prince    advanced potion       27 0.00129 1.95  0.00252
 ## 10 Deathly Hallows      deathly hallows       30 0.00126 1.95  0.00245
 ## # … with 107,006 more rows</code></pre>
-<pre class="r"><code>plot_potter&lt;- bigram_tf_idf %&gt;%
+<pre class="r"><code># factor the bigrams and rearrange according tf-idf
+plot_potter &lt;- 
+  bigram_tf_idf %&gt;%
   arrange(desc(tf_idf)) %&gt;%
-  mutate(bigram = factor(bigram, levels = rev(unique(bigram))))
-
+  mutate(bigram = factor(bigram, 
+                         levels = rev(unique(bigram)))) </code></pre>
+<pre class="r"><code># plot the results 
 plot_potter %&gt;% 
   top_n(20) %&gt;%
-  ggplot(aes(bigram, tf_idf, fill = book)) +
+  ggplot(aes(bigram, 
+             tf_idf, 
+             fill = book)) +
   geom_col() +
-  labs(x = NULL, y = &quot;tf-idf&quot;) +
-  coord_flip()</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-31-1.png" width="672" />
-Now, to get an idea of how our sentiment analysis was affected by negations, let’s find all the bigrams that have the word “not” as the first word in the bigram.</p>
+  labs(x = NULL, 
+       y = &quot;tf-idf&quot;) +
+  coord_flip() +
+  theme_minimal() +
+  scale_fill_viridis(discrete = &quot;TRUE&quot;,
+                     option = &quot;C&quot;)</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p>Now, to get an idea of how our sentiment analysis was affected by negations, let’s find all the bigrams that have the word “not” as the first word in the bigram.</p>
 <pre class="r"><code>bigrams_separated %&gt;%
   filter(word1 == &quot;not&quot;) %&gt;%
-  count(word1, word2, sort = TRUE)</code></pre>
-<pre><code>## # A tibble: 1,085 x 3
+  count(word1, 
+        word2, 
+        sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 1,085 × 3
 ##    word1 word2     n
 ##    &lt;chr&gt; &lt;chr&gt; &lt;int&gt;
 ##  1 not   to      383
@@ -623,13 +826,15 @@ Now, to get an idea of how our sentiment analysis was affected by negations, let
 ## 10 not   been     75
 ## # … with 1,075 more rows</code></pre>
 <p>The first ten bigrams with “not” as the first word are boring, so let’s remove stop-words from the <code>word2</code> column.</p>
-<pre class="r"><code>bigrams_separated &lt;- bigrams_separated %&gt;%
+<pre class="r"><code># use an anchor term (not) 
+bigrams_separated &lt;- 
+  bigrams_separated %&gt;%
   filter(word1 == &quot;not&quot;) %&gt;%
   filter(!word2 %in% stop_words$word)%&gt;%
   count(word1, word2, sort = TRUE)
 
 bigrams_separated</code></pre>
-<pre><code>## # A tibble: 824 x 3
+<pre><code>## # A tibble: 824 × 3
 ##    word1 word2          n
 ##    &lt;chr&gt; &lt;chr&gt;      &lt;int&gt;
 ##  1 not   answer        41
@@ -643,16 +848,17 @@ bigrams_separated</code></pre>
 ##  9 not   care          22
 ## 10 not   knowing       17
 ## # … with 814 more rows</code></pre>
-<pre class="r"><code>BING &lt;- get_sentiments(&quot;bing&quot;)
-
-not_words &lt;- bigrams_separated %&gt;%
+<pre class="r"><code># filter the negation bigrams
+not_words &lt;- 
+  bigrams_separated %&gt;%
   filter(word1 == &quot;not&quot;) %&gt;%
   filter(!word2 %in% stop_words$word)%&gt;%
-  inner_join(BING, by = c(word2 = &quot;word&quot;)) %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;), 
+             by = c(word2 = &quot;word&quot;)) %&gt;%
   ungroup()
 
 not_words</code></pre>
-<pre><code>## # A tibble: 199 x 4
+<pre><code>## # A tibble: 199 × 4
 ##    word1 word2       n sentiment
 ##    &lt;chr&gt; &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;    
 ##  1 not   bad        14 negative 
@@ -667,38 +873,337 @@ not_words</code></pre>
 ## 10 not   afraid      5 negative 
 ## # … with 189 more rows</code></pre>
 <p>Just looking at the top ten words in the list, we can see that most of the words that are preceded by “not” in the series, have negative sentiment. This means, we may be over estimating the negative sentiment present in the text. Of course, there are many other negation words such as “never”, “no”, etc. One could explore all of these possible negation words to get a better idea of how negation is affecting the sentiment analysis.</p>
-<p>We can also create a graph that connects our most frequently occurring words with each other. Looking at the graph below, we can see a couple of larger clusters that give some context to what the series might be about. For example, there is a cluster with the word “professor” in the center, with several other words connected to it such as“McGonagall” and “Lupin”.</p>
-<pre class="r"><code>bigram_graph &lt;- bigram_counts %&gt;%
-  filter(n &gt; 70) %&gt;%
-  graph_from_data_frame()
+<p>We can also create a graph that connects our most frequently occurring words with each other. Looking at the graph below, we can see a couple of larger clusters that give some context to what the series might be about. For example, there is a cluster with the word “professor” in the center, with several other words connected to it such as”McGonagall” and “Lupin”.</p>
+<pre class="r"><code># convert to an igraph object
+bigram_graph &lt;- 
+  bigram_counts %&gt;%
+  filter(n &gt; 35) %&gt;%
+  as_tbl_graph()
 
 bigram_graph</code></pre>
-<pre><code>## IGRAPH 02520a3 DN-- 79 43 -- 
-## + attr: name (v/c)
-## + edges from 02520a3 (vertex names):
-##  [1] professor mcgonagall-&gt;578 uncle vernon        -&gt;386
-##  [3] harry potter        -&gt;349 death eaters        -&gt;346
-##  [5] harry looked        -&gt;316 harry ron           -&gt;302
-##  [7] aunt petunia        -&gt;206 invisibility cloak  -&gt;192
-##  [9] professor trelawney -&gt;177 dark arts           -&gt;176
-## [11] professor umbridge  -&gt;174 death eater         -&gt;164
-## [13] entrance hall       -&gt;145 madam pomfrey       -&gt;145
-## [15] dark lord           -&gt;141 professor dumbledore-&gt;127
-## + ... omitted several edges</code></pre>
-<pre class="r"><code>set.seed(2017)
+<pre><code>## # A tbl_graph: 207 nodes and 138 edges
+## #
+## # A rooted forest with 69 trees
+## #
+## # Node Data: 207 × 1 (active)
+##   name                
+##   &lt;chr&gt;               
+## 1 professor mcgonagall
+## 2 uncle vernon        
+## 3 harry potter        
+## 4 death eaters        
+## 5 harry looked        
+## 6 harry ron           
+## # … with 201 more rows
+## #
+## # Edge Data: 138 × 2
+##    from    to
+##   &lt;int&gt; &lt;int&gt;
+## 1     1   139
+## 2     2   140
+## 3     3   141
+## # … with 135 more rows</code></pre>
+<pre class="r"><code># plot with a seed
+set.seed(2017)
 
-ggraph(bigram_graph, layout = &quot;fr&quot;) +
-  geom_edge_link() +
-  geom_node_point() +
-  geom_node_text(aes(label = name), vjust = 1, hjust = 1)</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+ggraph(bigram_graph, 
+       layout = &quot;fr&quot;) +
+  geom_edge_link(colour = &quot;#bfbfbf&quot;) +
+  geom_node_point(color = &quot;#428bca&quot;, 
+                  size = 5,
+                  alpha = 0.3) +
+  geom_node_text(aes(label = name), 
+                 repel = TRUE,
+                 check_overlap = FALSE) +
+  theme_graph()</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+</div>
+</div>
+</div>
+<div id="word-correlations" class="section level1">
+<h1>Word Correlations</h1>
+<p>Expanding on sentiments, it is also helpful to understand which pairs of words co-appear the texts. Let’s start with one of the texts..say <em>Goblet of Fire</em> and count the pairs of terms.</p>
+<pre class="r"><code># use the goblet of fire text
+gf_words &lt;- 
+    tibble(chapter = seq_along(goblet_of_fire),
+           text = goblet_of_fire) %&gt;%
+    unnest_tokens(word, text) %&gt;%
+    filter(!word %in% stop_words$word)
+
+gf_words</code></pre>
+<pre><code>## # A tibble: 72,663 × 2
+##    chapter word     
+##      &lt;int&gt; &lt;chr&gt;    
+##  1       1 villagers
+##  2       1 hangleron
+##  3       1 called   
+##  4       1 riddle   
+##  5       1 house    
+##  6       1 riddle   
+##  7       1 family   
+##  8       1 lived    
+##  9       1 stood    
+## 10       1 hill     
+## # … with 72,653 more rows</code></pre>
+<pre class="r"><code># count common word pairs
+word_pairs &lt;- 
+  gf_words %&gt;%
+  pairwise_count(word, 
+                 chapter, 
+                 sort = TRUE)
+
+word_pairs</code></pre>
+<pre><code>## # A tibble: 23,777,402 × 3
+##    item1  item2      n
+##    &lt;chr&gt;  &lt;chr&gt;  &lt;dbl&gt;
+##  1 looked eyes      37
+##  2 voice  eyes      37
+##  3 head   eyes      37
+##  4 harry  eyes      37
+##  5 time   eyes      37
+##  6 hand   eyes      37
+##  7 eyes   looked    37
+##  8 voice  looked    37
+##  9 head   looked    37
+## 10 harry  looked    37
+## # … with 23,777,392 more rows</code></pre>
+<p>You can see that the output defaults to pairs of terms. Let’s say we just wanted to know about those associated with <em>harry</em></p>
+<pre class="r"><code># find counts between an anchor and words
+word_pairs %&gt;% 
+  filter(item1 == &quot;harry&quot;)</code></pre>
+<pre><code>## # A tibble: 9,918 × 3
+##    item1 item2       n
+##    &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+##  1 harry eyes       37
+##  2 harry looked     37
+##  3 harry voice      37
+##  4 harry head       37
+##  5 harry time       37
+##  6 harry hand       37
+##  7 harry told       36
+##  8 harry heard      36
+##  9 harry harry&#39;s    36
+## 10 harry people     35
+## # … with 9,908 more rows</code></pre>
+<p>However, the terms that commonly appear together is generally just descriptive. While this type of assessment is nice, it doesn’t tell us much. Rather, we may also want to know how often words appear together with respect to their occurrence separately - aka the correlation among words which is measures in binary terms: <em>yes they do</em> or <em>no they don’t</em>. One common measure to gauge this type of correlation is given by the <span class="math inline">\(\phi\)</span><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> coefficient. Take a look at the contingency table</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: grey !important;vertical-align: middle !important;">
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Word 1 included <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Word 1 NOT included <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Word 2 included <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;">
+<path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;">
+<path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;">
+<path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#cccccc;overflow:visible;position:relative;"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Word 2 NOT included <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;">
+<path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;">
+<path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;">
+<path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#cccccc;overflow:visible;position:relative;"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Total
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;">
+<path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#cccccc;overflow:visible;position:relative;"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#66c3ff;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;">
+<path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#88e6b3;overflow:visible;position:relative;"><path d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#cccccc;overflow:visible;position:relative;"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ff7b7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ffbd7b;overflow:visible;position:relative;"><path d="M0 56v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56zm40 200c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24zm272 256c-20.183 0-29.485-39.293-33.931-57.795-5.206-21.666-10.589-44.07-25.393-58.902-32.469-32.524-49.503-73.967-89.117-113.111a11.98 11.98 0 0 1-3.558-8.521V59.901c0-6.541 5.243-11.878 11.783-11.998 15.831-.29 36.694-9.079 52.651-16.178C256.189 17.598 295.709.017 343.995 0h2.844c42.777 0 93.363.413 113.774 29.737 8.392 12.057 10.446 27.034 6.148 44.632 16.312 17.053 25.063 48.863 16.382 74.757 17.544 23.432 19.143 56.132 9.308 79.469l.11.11c11.893 11.949 19.523 31.259 19.439 49.197-.156 30.352-26.157 58.098-59.553 58.098H350.723C358.03 364.34 384 388.132 384 430.548 384 504 336 512 312 512z"></path></svg>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<span style="color:#808080;"><b><i>Grand</i></b> <b>Total</b></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>now translate that to something mathematical</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: grey !important;vertical-align: middle !important;">
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Word 1 included
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Word 1 NOT included
+</th>
+<th style="text-align:center;color: grey !important;vertical-align: middle !important;">
+Total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Word 2 included
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(a\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(\mu\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<span class="math inline">\(\zeta\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Word 2 NOT included
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(m\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(\alpha\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<span class="math inline">\(g\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;font-weight: bold;color: grey !important;width: 15em; ">
+Total
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(z\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;width: 15em; ">
+<span class="math inline">\(\rho\)</span>
+</td>
+<td style="text-align:center;vertical-align: middle !important;">
+<span style="color:#808080;"><b><i>Grand</i></b> <b>Total</b></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>And we can measure <span class="math inline">\(\phi\)</span> by <span class="math display">\[\dfrac{a\cdot\alpha - m\cdot\mu}{\sqrt{z\cdot\zeta\cdot\rho\cdot g}}\]</span></p>
+<p>or by using</p>
+<pre class="r"><code>word_cor &lt;- 
+  gf_words %&gt;%
+  group_by(word) %&gt;%
+  filter(n() &gt;= 20) %&gt;%
+  pairwise_cor(word, chapter) %&gt;%
+  drop_na(correlation)
+
+word_cor</code></pre>
+<pre><code>## # A tibble: 514,806 × 3
+##    item1   item2  correlation
+##    &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt;
+##  1 house   called     0.345  
+##  2 family  called     0.296  
+##  3 stood   called     0.195  
+##  4 village called    -0.0447 
+##  5 windows called    -0.181  
+##  6 missing called    -0.195  
+##  7 fine    called    -0.0903 
+##  8 half    called    -0.163  
+##  9 ago     called     0.102  
+## 10 strange called     0.00641
+## # … with 514,796 more rows</code></pre>
+<p>We can also look at at the correlation with a particular term and plot it</p>
+<pre class="r"><code># highest correlated words that appears with “potter”
+word_cor %&gt;%
+  filter(item1 == &quot;potter&quot;) %&gt;%
+  arrange(desc(correlation))</code></pre>
+<pre><code>## # A tibble: 717 × 3
+##    item1  item2    correlation
+##    &lt;chr&gt;  &lt;chr&gt;          &lt;dbl&gt;
+##  1 potter odd            0.585
+##  2 potter stood          0.536
+##  3 potter telling        0.512
+##  4 potter slowly         0.471
+##  5 potter class          0.445
+##  6 potter minutes        0.444
+##  7 potter ears           0.441
+##  8 potter straight       0.441
+##  9 potter fourth         0.422
+## 10 potter witch          0.422
+## # … with 707 more rows</code></pre>
+<pre class="r"><code># visualize the correlations within word clusters
+set.seed(123)
+
+gf_words %&gt;%
+  group_by(word) %&gt;%
+  filter(n() &gt;= 20) %&gt;%
+  pairwise_cor(word, chapter) %&gt;%
+  filter(!is.na(correlation),
+         correlation &gt; .65) %&gt;%
+  graph_from_data_frame() %&gt;%
+  ggraph(layout = &quot;fr&quot;) +
+  geom_node_point(color = &quot;#5cb85c&quot;, 
+                  size = 5,
+                  alpha = 0.3) +
+  geom_edge_link(aes(edge_alpha = correlation), 
+                 show.legend = FALSE) +
+  geom_node_text(aes(label = name), 
+                 repel = TRUE) +
+  theme_graph()</code></pre>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-53-1.png" width="672" /></p>
 <p>That’s it for text analytics with the Harry Potter series.This is by no means a comprehensive analysis, but it should have demonstrated some of the basic facets of text mining with the <code>tidyverse</code> in R.</p>
-</div>
-</div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>Consider just pasting it at the top of your script and leaving it there. Please note that this will not work in an Rmarkdown file or Shiny app.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Note that if you run a package update through RStudio, it will overwrite the one we use with the one on CRAN.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Yours will probably look a bit different but that is OK!<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>written <em>phi</em> and pronounced <em>fee</em> or <em>fi</em> depending on who you ask<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>

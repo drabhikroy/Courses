@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>So What&#39;s Due? | Data Visualization</title>
-    <link>https://edp693e.theoreticalphysed.com/due/</link>
-      <atom:link href="https://edp693e.theoreticalphysed.com/due/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edp693e.asocialdatascientist.com/due/</link>
+      <atom:link href="https://edp693e.asocialdatascientist.com/due/index.xml" rel="self" type="application/rss+xml" />
     <description>So What&#39;s Due?</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>https://edp693e.theoreticalphysed.com/img/course_info.png</url>
+      <url>https://edp693e.asocialdatascientist.com/img/course_info.png</url>
       <title>So What&#39;s Due?</title>
-      <link>https://edp693e.theoreticalphysed.com/due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/</link>
     </image>
     
     <item>
       <title>Shiny Everything</title>
-      <link>https://edp693e.theoreticalphysed.com/due/11-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/11-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/11-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/11-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -80,7 +80,7 @@ Location
 Review a Shiny presentation
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/lesson/11-lesson/#data-collection&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/lesson/11-lesson/#data-collection&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -108,7 +108,7 @@ Review a Shiny presentation
 Submit your Shiny Project
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/projects/02-project/#step-ii-visualization&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/projects/02-project/#step-ii-visualization&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -136,7 +136,7 @@ Submit your Shiny Project
 Complete two modules
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/lesson/11-lesson/#data-camp&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/lesson/11-lesson/#data-camp&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -149,13 +149,13 @@ Complete two modules
     
     <item>
       <title>Friends Don&#39;t Let Friends Use Pie Charts</title>
-      <link>https://edp693e.theoreticalphysed.com/due/01-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/01-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/01-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/01-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -215,7 +215,7 @@ Location
 Install Course Software
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/resource/install/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/resource/install/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -243,7 +243,7 @@ Install Course Software
 Read a few things
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/readings/01-readings/#read-things&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/readings/01-readings/#read-things&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -271,7 +271,7 @@ Read a few things
 Look over the website
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/readings/01-readings/#review-the-rest&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/readings/01-readings/#review-the-rest&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -299,7 +299,7 @@ Look over the website
 Get into the course Slack account
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/01-assignment/#class-slack-account-access&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/01-assignment/#class-slack-account-access&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -327,7 +327,7 @@ Get into the course Slack account
 Find a bad graphic
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/01-assignment/#find-a-bad-graphic&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/01-assignment/#find-a-bad-graphic&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -368,13 +368,13 @@ Complete Introduction to R
     
     <item>
       <title>Base R is a Thing</title>
-      <link>https://edp693e.theoreticalphysed.com/due/02-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/02-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/02-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/02-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -434,7 +434,7 @@ Location
 Read a couple papers
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/readings/02-readings/#read-things&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/readings/02-readings/#read-things&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -462,7 +462,7 @@ Read a couple papers
 Create two bad and one good visualization in Base R
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/02-assignment/#create-plots-in-base-r-1&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/02-assignment/#create-plots-in-base-r-1&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -503,13 +503,13 @@ Complete two modules
     
     <item>
       <title>ggplotting</title>
-      <link>https://edp693e.theoreticalphysed.com/due/03-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/03-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/03-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/03-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -569,7 +569,7 @@ Location
 Create five plots in ggplot
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/03-assignment/#create-plots-in-ggplt&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/03-assignment/#create-plots-in-ggplt&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -610,13 +610,13 @@ Complete one module
     
     <item>
       <title>Tidy Themes</title>
-      <link>https://edp693e.theoreticalphysed.com/due/04-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/04-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/04-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/04-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -689,13 +689,13 @@ Complete two modules
     
     <item>
       <title>Making Copies</title>
-      <link>https://edp693e.theoreticalphysed.com/due/05-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/05-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/05-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/05-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -755,7 +755,7 @@ Location
 Create a replication and alternative visualization
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/05-assignment/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/05-assignment/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -796,13 +796,13 @@ Complete two modules
     
     <item>
       <title>I&#39;m the Map</title>
-      <link>https://edp693e.theoreticalphysed.com/due/06-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/06-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/06-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/06-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -862,7 +862,7 @@ Location
 Create five census maps
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/06-assignment/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/06-assignment/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -903,13 +903,13 @@ Complete two modules
     
     <item>
       <title>A Map to the Past</title>
-      <link>https://edp693e.theoreticalphysed.com/due/07-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/07-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/07-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/07-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -969,7 +969,7 @@ Location
 Construct political maps
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/07-assignment/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/07-assignment/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1010,13 +1010,13 @@ Complete one module
     
     <item>
       <title>Hooked on Feelings</title>
-      <link>https://edp693e.theoreticalphysed.com/due/08-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/08-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/08-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/08-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1076,7 +1076,7 @@ Location
 Construct a sentiment analysis
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/08-assignment/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/08-assignment/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1104,7 +1104,7 @@ Construct a sentiment analysis
 Submit a prospectus for your R Project
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/projects/01-project/#step-i-prospectus&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/projects/01-project/#step-i-prospectus&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1145,13 +1145,13 @@ Complete two modules
     
     <item>
       <title>The Social Network</title>
-      <link>https://edp693e.theoreticalphysed.com/due/09-due/</link>
+      <link>https://edp693e.asocialdatascientist.com/due/09-due/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://edp693e.theoreticalphysed.com/due/09-due/</guid>
+      <guid>https://edp693e.asocialdatascientist.com/due/09-due/</guid>
       <description>
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://edp693e.theoreticalphysed.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://edp693e.asocialdatascientist.com/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1211,7 +1211,7 @@ Location
 Explore social network analysis
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/example/09-example/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/example/09-example/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1239,7 +1239,7 @@ Explore social network analysis
 Answer questions about networks
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;vertical-align: middle !important;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/assignment/09-assignment/&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/assignment/09-assignment/&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1267,7 +1267,7 @@ Answer questions about networks
 Submit your R Project
 &lt;/td&gt;
 &lt;td style=&#34;text-align:center;&#34;&gt;
-&lt;a href=&#34;https://edp693e.theoreticalphysed.com/projects/01-project/#step-ii-visualization-1&#34;&gt;Link&lt;/a&gt;
+&lt;a href=&#34;https://edp693e.asocialdatascientist.com/projects/01-project/#step-ii-visualization-1&#34;&gt;Link&lt;/a&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

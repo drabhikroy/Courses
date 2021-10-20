@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Data Visualization</title>
-    <link>https://edp693e.theoreticalphysed.com/authors/</link>
-      <atom:link href="https://edp693e.theoreticalphysed.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edp693e.asocialdatascientist.com/authors/</link>
+      <atom:link href="https://edp693e.asocialdatascientist.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>https://edp693e.theoreticalphysed.com/img/course_info.png</url>
+      <url>https://edp693e.asocialdatascientist.com/img/course_info.png</url>
       <title>Authors</title>
-      <link>https://edp693e.theoreticalphysed.com/authors/</link>
+      <link>https://edp693e.asocialdatascientist.com/authors/</link>
     </image>
     
   </channel>
