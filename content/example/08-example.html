@@ -42,7 +42,7 @@ editor_options:
 </ul></li>
 <li><a href="#another-example">Another Example</a>
 <ul>
-<li><a href="#section"></a></li>
+<li><a href="#loading-libraries-1">Loading libraries</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#word-correlations">Word Correlations</a></li>
@@ -385,9 +385,8 @@ speech_bing_descriptives</code></pre>
 <div id="another-example" class="section level2">
 <h2>Another Example</h2>
 <p>The Harry Potter R package <code>harrypotter</code> on GitHub contains the text for all seven books in the Harry Potter series, by JK Rowling. Below, I have included the code required to connect to the package using <code>devtools</code>, as well as the other packages required for the basic text analytics.</p>
-<div id="section" class="section level3">
-<h3></h3>
-<p>Loading libraries</p>
+<div id="loading-libraries-1" class="section level3">
+<h3>Loading libraries</h3>
 <p>Go ahead and load these or install and then load them.</p>
 <p>There is a <code>harrypotter</code> package on CRAN <strong><em>but that is not the one we want</em></strong>. Please run the following instead<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 <pre class="r"><code>if (packageVersion(&quot;devtools&quot;) &lt; 1.6) {
@@ -916,7 +915,7 @@ ggraph(bigram_graph,
                  repel = TRUE,
                  check_overlap = FALSE) +
   theme_graph()</code></pre>
-<p><img src="/example/08-example_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+<p><img src="/example/08-example_files/figure-html/unnamed-chunk-45-1.png" width="14" /></p>
 </div>
 </div>
 </div>
@@ -1196,7 +1195,7 @@ gf_words %&gt;%
                  repel = TRUE) +
   theme_graph()</code></pre>
 <p><img src="/example/08-example_files/figure-html/unnamed-chunk-53-1.png" width="672" /></p>
-<p>That’s it for text analytics with the Harry Potter series.This is by no means a comprehensive analysis, but it should have demonstrated some of the basic facets of text mining with the <code>tidyverse</code> in R.</p>
+<p>That’s it for text analytics with the Harry Potter series.This is by no means a comprehensive analysis, but it should have demonstrated some of the basic facets of mostly tidy text mining in R.</p>
 </div>
 <div class="footnotes">
 <hr />

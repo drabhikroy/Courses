@@ -1,17 +1,17 @@
 ---
 title: "Base R is a Thing"
 linktitle: "Week 2: Base R is a Thing"
-menu:
-  content:
-    parent: Readings
-    weight: 1
-type: docs
-weight: 1
-bibliography: "../../static/bib/references.bib"
-csl: "../../static/bib/chicago-fullnote-bibliography-no-bib.csl"
 output:
   blogdown::html_page:
     toc: true
+menu:
+  example:
+    parent: Readings
+    weight: 2
+type: docs
+weight: 1
+editor_options: 
+  chunk_output_type: console
 ---
 
 <style>

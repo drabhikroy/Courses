@@ -142,7 +142,7 @@ Exercises are unattepted or mostly incomplete.
 &lt;li&gt;&lt;p&gt;an in-class &lt;a href=&#34;https://edp693e.asocialdatascientist.com/data%20scripts/classthing.R&#34; target=&#34;_blank&#34;&gt;example file&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; used to render a Shiny app&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;a &lt;a href=&#34;https://edp693e.asocialdatascientist.com/slides/Shiny/Shiny.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; of the presentation.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://edp693e.asocialdatascientist.com/slides/Shiny/Shiny.html&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;iframe src=&#34;https://edp693e.asocialdatascientist.com/slides/Shiny/Shiny.html&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;You can move back and forth using &lt;kbd&gt;←&lt;/kbd&gt; and &lt;kbd&gt;→&lt;/kbd&gt; and toggle fullscreen by pressing &lt;kbd&gt;F&lt;/kbd&gt;. Just press &lt;kbd&gt;O&lt;/kbd&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; at any point in your slideshow and a display of all slides, called tile view, will appear. Click on a slide to go there or press &lt;kbd&gt;O&lt;/kbd&gt; to exit tile view. For more options, press &lt;kbd&gt;H&lt;/kbd&gt; for help.&lt;/p&gt;
 &lt;/div&gt;

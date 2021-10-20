@@ -174,7 +174,11 @@ fileText <-
   gsub("\\$", "", fileText)
 
 fileText %>%
-  kbl() 
+  kable("html",
+        booktabs = TRUE,
+        col.names = c(""),
+        escape = FALSE,
+        align = 'c')
 ```
 
 
@@ -295,9 +299,7 @@ So this text has 117 negative polarity words and 240 positive polarity words. Th
 
 The Harry Potter R package `harrypotter` on GitHub contains the text for all seven books in the Harry Potter series, by JK Rowling. Below, I have included the code required to connect to the package using `devtools`, as well as the other packages required for the basic text analytics.
 
-### 
-
-Loading libraries
+### Loading libraries
 
 Go ahead and load these or install and then load them.
 
@@ -675,7 +677,7 @@ bigram_graph <-
 bigram_graph
 ```
 
-```{r, message=FALSE, warning=FALSE}
+```{r, message=FALSE, warning=FALSE, out.width=14}
 # plot with a seed
 set.seed(2017)
 
@@ -750,30 +752,30 @@ equiv <- as.character(fontawesome::fa("bars",
 tibble(
   
   blank = c(
-    paste("Word 2 included ", thumbsUpw2),
+    paste("Word 2 included", " ", thumbsUpw2),
     
-    paste("Word 2 NOT included ", thumbsDownw2),
+    paste("Word 2 NOT included ", " ", thumbsDownw2),
     
     "Total"
   ),
   
   `Has word 1` = c(
     
-  paste(thumbsUpw1, thumbsUpw2),
+  paste(thumbsUpw1, " ", thumbsUpw2),
     
-  paste(thumbsUpw1, thumbsDownw2),
+  paste(thumbsUpw1, " ",thumbsDownw2),
   
-  paste(thumbsUpw1, thumbsUpw2, "  ", plus, "  ", thumbsUpw1, thumbsDownw2)
+  paste(thumbsUpw1, " ", thumbsUpw2, "  ", plus, "  ", thumbsUpw1, thumbsDownw2)
   
   ),
   
   `No word 1` = c(
     
-    paste(thumbsDownw1, thumbsUpw2),
+    paste(thumbsDownw1, " ", thumbsUpw2),
     
-    paste(thumbsDownw1, thumbsDownw2),
+    paste(thumbsDownw1, " ", thumbsDownw2),
     
-    paste(thumbsDownw1, thumbsUpw2, "  ", plus, "  ", thumbsDownw1, thumbsDownw2)
+    paste(thumbsDownw1, " ", thumbsUpw2, "  ", plus, "  ", thumbsDownw1, " ", thumbsDownw2)
     
   ),
   
@@ -791,8 +793,8 @@ tibble(
   kable("html",
         booktabs = TRUE,
         col.names = c("", 
-                      paste0("Word 1 included ", thumbsUpw1), 
-                      paste0("Word 1 NOT included ", thumbsDownw1),
+                      paste0("Word 1 included", " ", thumbsUpw1), 
+                      paste0("Word 1 NOT included", " ", thumbsDownw1),
                       "Total"),
         escape = FALSE,
         align = 'lccc') %>%
@@ -923,5 +925,4 @@ gf_words %>%
   theme_graph()
 ```
 
-That's it for text analytics with the Harry Potter series.This is by no means a comprehensive analysis, but it should have demonstrated some of the basic facets of text mining with the `tidyverse` in R.
-
+That's it for text analytics with the Harry Potter series.This is by no means a comprehensive analysis, but it should have demonstrated some of the basic facets of mostly tidy text mining in R.

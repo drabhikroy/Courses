@@ -230,7 +230,8 @@ bigram_series
 # set factor to keep books in release order
 reverse_bigram_series <- 
   bigram_series %>%
-  mutate(book = factor(book, levels = rev(unique(book)))) %>%
+  mutate(book = factor(book, 
+                       levels = rev(unique(book)))) %>%
   arrange(book)
 
 reverse_bigram_series
@@ -378,7 +379,7 @@ word_cor <-
   group_by(word) %>%
   filter(n() >= 20) %>%
   pairwise_cor(word, chapter) %>%
-  filter(!is.na(correlation))
+  drop_na(correlation)
 
 word_cor
 
@@ -387,9 +388,9 @@ word_cor %>%
   filter(item1 == "potter") %>%
   arrange(desc(correlation))
 
+# visualize the correlations within word clusters
 set.seed(123)
 
-# visualize the correlations within word clusters
 gf_words %>%
   group_by(word) %>%
   filter(n() >= 20) %>%
@@ -406,3 +407,4 @@ gf_words %>%
   geom_node_text(aes(label = name), 
                  repel = TRUE) +
   theme_graph()
+  
