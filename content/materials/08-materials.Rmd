@@ -231,6 +231,8 @@ tibble(
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
   row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
+
+
 ```
 </div>
 <div class="clear"></div>
@@ -276,6 +278,8 @@ tibble(
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
   row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
+
+
 ```
 </div>
 <div class="clear"></div>
@@ -321,6 +325,8 @@ tibble(
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
   row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
+
+
 ```
 </div>
 <div class="clear"></div>

@@ -113,7 +113,7 @@ kable(read_schedule,
   row_spec(0, extra_css = 'vertical-align: middle !important;', color = "#ffffff")
 ```
 
-Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages, double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.
+<i>Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages, double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.</i>
 
 ### Presentation
 You will give a two to three minute pitch that addresses the entire breadth of your literature review followed by Q&A session. An evaluation of the work will be contingent on staying within the allotted timeframe, covering adequate content, and addressing questions with proper professional tones and response sets. 

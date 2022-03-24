@@ -167,7 +167,7 @@ Outlining Your Literature Review
 L4
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-Refining the Review
+A First Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 3/29/22
@@ -182,7 +182,7 @@ Refining the Review
 L5
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-Drafting a Final Draft
+A Second Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 4/12/22
@@ -197,7 +197,7 @@ Drafting a Final Draft
 L6
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-The Literature Review
+A Never Really Final Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 4/26/22
@@ -210,7 +210,7 @@ The Literature Review
 </tbody>
 </table>
 
-Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages, double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.
+<i>Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages, double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.</i>
 
 ### Presentation
 

@@ -16,5 +16,5 @@ editor_options:
 ---
 
 ### Literature Review Task
-Your second literature review task is due in *two weeks*. Please head over to the [L2: Expanded Annotated Bibliography](/deliverables/01-L2/) page for more information.
+Your second literature review task is due in *two weeks*. Please head over to the [L2: Expanded Annotated Bibliography](/deliverables/02-l2/) page for more information.
 

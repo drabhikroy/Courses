@@ -17,5 +17,5 @@ editor_options:
 
 ### Literature Review Task
 
-Your third literature review task is due in *one week*. Please head over to the [L3: Outlining Your Literature Review](/deliverables/01-L3/) page for more information.
+Your third literature review task is due in *one week*. Please head over to the [L3: Outlining Your Literature Review](/deliverables/03-l3/) page for more information.
 
