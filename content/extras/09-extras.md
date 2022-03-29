@@ -165,4 +165,4 @@ $(document).ready(function(){
 
 ## Additional Survey Design Information and Data
 
-This week take a look at [Writing Survey Questions](https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/) at the [Pew Research Center](https://www.pewresearch.org/). For those of you who are not aware, Pew Research Center is a nonpartisan fact tank that informs the public about the issues, attitudes and trends shaping the world. They also have [public data sets](https://www.pewresearch.org/download-datasets/) available which are both great for research or just practice.  
+This week take a look at [Writing Survey Questions](https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/) at the [Pew Research Center](https://www.pewresearch.org/). For those of you who are not aware, Pew Research Center is a nonpartisan fact tank that informs the public about the issues, attitudes and trends shaping the world. They also have [public data sets](https://www.pewresearch.org/download-datasets/) available which are both great for research or practice.  

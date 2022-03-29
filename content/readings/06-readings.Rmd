@@ -56,6 +56,12 @@ weight: 2
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
 
 ```{r echo=FALSE, message=FALSE}
@@ -69,14 +75,6 @@ library(kableExtra)
 ### Read The Text
 
 ```{r eval = TRUE, echo = FALSE, message=FALSE}
-unchecked <- as.character(fontawesome::fa("square", fill = "#63d6c6"))
-
-checked <- as.character(fontawesome::fa("check-square", fill = "#63d6c6"))
-
-pdf_link <- function() {
- paste0("<a href='/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='30'>", "</a>")
-}
-
 read_schedule <- read_csv("readings.csv",
                           show_col_types = FALSE) %>% 
                   as_tibble() %>%
@@ -115,9 +113,16 @@ kable(read_schedule,
 ### Read A Chapter
 
 ```{r echo=FALSE}
+unchecked <- as.character(fontawesome::fa("square", fill = "#63d6c6"))
+
+checked <- as.character(fontawesome::fa("check-square", fill = "#63d6c6"))
+
+pdf_link <- function() {
+ paste0("<a href='/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
+}
 
 readings <- tibble(
-  paper <- c("Shadish, W., Cook, T., & Campbell, D. (2002). Construct Validity and External Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i>(2nd ed., pp. 64-102). Cengage Learning."
+  paper <- c("Shadish, W., Cook, T., & Campbell, D. (2002). Construct Validity and External Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i> (2nd ed., pp. 64-102). Cengage Learning."
   ),
  
   download <- c(
@@ -137,10 +142,9 @@ readings %>%
       "html", 
       escape = FALSE,
       align = 'lc') %>%
-  kable_paper("hover", full_width = F) %>%
+  kable_paper(full_width = F) %>%
   column_spec(1, width = "30em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(2, width = "10em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>% 
-  row_spec(0, extra_css = 'vertical-align: middle !important;', color = "#f7f7f7") %>%
-  row_spec(1, extra_css = 'vertical-align: middle !important;')
+  row_spec(0:1, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </center>

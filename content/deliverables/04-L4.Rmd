@@ -49,7 +49,7 @@ While the construction of a literature review is a fluid process without well-de
 
 This submission must be constructed using the following general components and should be uploaded to [eCampus](https://ecampus.wvu.edu/) following the formatting guidelines given in the main [tasks page](/tasks/#formatting)
 
-Building on the feedback you reviewed on our narrative from L1 and your matrix of your 25 articles, you will construct an outline of your literature review. To practice the formatting of APA 7th papers, please submit your outline using the following components:
+Building on the feedback you reviewed on our narrative from L1 and your matrix of your 25 articles, you will construct a first draft of your literature review. To practice the formatting of APA 7th papers, please submit your outline using the following components:
 
 1. A cover page
 2. 750-1250 words for the narrative
@@ -86,4 +86,3 @@ If you are a procedure oriented type of person, consider using the process below
 
 <font size="-1"><a id="1" href="#" onclick="history.back();"><sup>1</sup></a> Adapted from an <a href="http://clt.astate.edu/mhayes/exampleoutline.htm" target="_blank"> example</a> by Dr. Marceline Thompson-Hayes, Arkansas State University</a></font>
 -->
-

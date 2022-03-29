@@ -60,6 +60,12 @@ weight: 2
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
 
 
@@ -84,7 +90,7 @@ weight: 2
   <tr>
    <td style="text-align:left;width: 15em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> Shadish, Cook, &amp; Campbell Chapter 1 </td>
    <td style="text-align:left;width: 25em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> Experiments and Generalized Causal Inference </td>
-   <td style="text-align:left;width: 5em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> 1 - 32 </td>
+   <td style="text-align:left;width: 5em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> Jan-32 </td>
    <td style="text-align:center;width: 10em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> 2/8/22 </td>
    <td style="text-align:center;width: 10em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> 2/14/22 </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;color: #ffffff !important;vertical-align: middle !important;"> <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:15px;width:15px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#428bca;overflow:visible;position:relative;"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg> </td>
@@ -106,17 +112,17 @@ weight: 2
 
 
 <center>
-<table class=" lightable-paper lightable-hover" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
  <thead>
   <tr>
-   <th style="text-align:left;color: #f7f7f7 !important;vertical-align: middle !important;"> Source </th>
-   <th style="text-align:center;color: #f7f7f7 !important;vertical-align: middle !important;"> Link </th>
+   <th style="text-align:left;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Source </th>
+   <th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Link </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;vertical-align: middle !important;"> Shadish, W., Cook, T., &amp; Campbell, D. (2002). Construct Validity and External Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i>(2nd ed., pp. 64-102). Cengage Learning. </td>
-   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;vertical-align: middle !important;"> <a href="/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="30"></a> </td>
+   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Shadish, W., Cook, T., &amp; Campbell, D. (2002). Construct Validity and External Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i> (2nd ed., pp. 64-102). Cengage Learning. </td>
+   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> <a href="/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
   </tr>
 </tbody>
 </table>

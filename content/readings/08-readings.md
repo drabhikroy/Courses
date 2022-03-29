@@ -60,6 +60,12 @@ weight: 2
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
   
 
@@ -98,17 +104,17 @@ weight: 2
 
 
 <center>
-<table class=" lightable-paper lightable-hover" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
  <thead>
   <tr>
-   <th style="text-align:left;color: #f7f7f7 !important;vertical-align: middle !important;"> Source </th>
-   <th style="text-align:center;color: #f7f7f7 !important;vertical-align: middle !important;"> Link </th>
+   <th style="text-align:left;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Source </th>
+   <th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Link </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;vertical-align: middle !important;"> Iloh (2021). Do It for the Culture: The Case for Memes in Qualitative Research. <i>nternational Journal of Qualitative Methods</i>(20). 1-10. </td>
-   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;vertical-align: middle !important;"> <a href="/handouts/Iloh%20(2021).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="30"></a> </td>
+   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Iloh (2021). Do It for the Culture: The Case for Memes in Qualitative Research. <i>International Journal of Qualitative Methods</i> (20). 1-10. <a href="https://doi.org/10.1177/16094069211025896" target="_blank">https://doi.org/10.1177/16094069211025896</a> </td>
+   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> <a href="/handouts/Iloh%20(2021).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
   </tr>
 </tbody>
 </table>

@@ -31,7 +31,7 @@ wk_post <- tibble(
                   "Read <i>Toward a Conceptual Framework for Mixed-Method Evaluation Designs</i>",
                   "Read <i>The Value of Mixed Methods Research: A Mixed Methods Study</i>",
                   "Review the in-class presentation <i>Survey Design</i>",
-                  "Review the criteria for <i>L4: Refining the Review</i>",
+                  "Review the criteria for <i>L4: The First Draft</i>",
                   "Create a draft survey in Qualtrics and review others"),
 
 "Details" = c("<a href='/readings/10-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",

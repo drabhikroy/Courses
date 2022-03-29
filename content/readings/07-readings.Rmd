@@ -56,9 +56,16 @@ weight: 2
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
   
 ### Read The Text
+
 ```{r echo=FALSE, message=FALSE}
 library(tidyverse)
 library(fontawesome)
@@ -67,15 +74,6 @@ library(kableExtra)
 ```
 
 ```{r eval = TRUE, echo = FALSE, message=FALSE}
-unchecked <- as.character(fontawesome::fa("square", fill = "#63d6c6"))
-
-checked <- as.character(fontawesome::fa("check-square", fill = "#63d6c6"))
-
-pdf_link1 <- function() {
- paste0("<a href='/handouts/Marinescu,%20Lawlor,%20&%20Kording%20(2018).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='30'>", "</a>")
-}
-
-
 read_schedule <- read_csv("readings.csv",
                           show_col_types = FALSE) %>% 
                   as_tibble() %>%
@@ -95,28 +93,34 @@ read_schedule <- read_csv("readings.csv",
 
 ```{r message=FALSE, warning=FALSE, eval = TRUE, echo = FALSE}
 kable(read_schedule, 
+      "html", 
       escape = FALSE,
       align = 'lllccccccccc') %>%
-  kable_styling(full_width = FALSE,
-                bootstrap_options = c("striped", "hover")) %>%
+  kable_paper(full_width = F) %>%
   column_spec(1, width = "15em") %>%
-  column_spec(2, width = "25em") %>%
-  column_spec(3, width = "5em") %>%
+  column_spec(2, width = "20em") %>%
+  column_spec(3, width = "7em") %>%
   column_spec(4, width = "10em") %>%
   column_spec(5, width = "10em") %>%
   column_spec(6, width = "5em") %>%
   column_spec(1:6, color = "#ffffff") %>%
-  row_spec(0:1, color = "#ffffff", extra_css = 'vertical-align: middle !important;')
+  row_spec(0:2, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 
 ### Read A Paper
 
 ```{r echo=FALSE}
+unchecked <- as.character(fontawesome::fa("square", fill = "#63d6c6"))
+
+checked <- as.character(fontawesome::fa("check-square", fill = "#63d6c6"))
+
+pdf_link1 <- function() {
+ paste0("<a href='/handouts/Marinescu,%20Lawlor,%20&%20Kording%20(2018).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
+}
 
 readings <- tibble(
   
-  paper <- c("Marinescu, Lawlor, & Kording (2018). Quasi-experimental causality in neuroscience
-and behavioural research. <i>nature: human beings</i>(2). 891–898."
+  paper <- c("Marinescu, Lawlor, & Kording (2018). Quasi-experimental causality in neuroscience and behavioural research. <i>nature: human beings</i> (2). 891–898. <a href='https://doi.org/10.1038/s41562-018-0466-5' target='_blank'>https://doi.org/10.1038/s41562-018-0466-5 </a>"
   ),
   
   download <- c(
@@ -136,11 +140,10 @@ readings %>%
       "html", 
       escape = FALSE,
       align = 'lc') %>%
-  kable_paper("hover", full_width = F) %>%
+  kable_paper(full_width = F) %>%
   column_spec(1, width = "30em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(2, width = "10em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>% 
-  row_spec(0, extra_css = 'vertical-align: middle !important;', color = "#f7f7f7") %>%
-  row_spec(1, extra_css = 'vertical-align: middle !important;') 
+  row_spec(0:1, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
 
 ```
 </center>

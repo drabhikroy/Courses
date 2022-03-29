@@ -90,13 +90,15 @@ materials:
     tasks: "10-tasks"
     due: "10-due"
 
-  # - title: 'All Mixed Up'
-  #   session: 11
-  #   date: "March 30, 2022"
-  #   readings: "11-readings"
-  #   materials: "11-materials"
-  #   due: "11-due"
-  #
+  - title: 'Most Mixed Methods Forget to Mix'
+    session: 9
+    date: "April 5, 2022"
+    readings: "11-readings"
+    materials: "11-materials"
+    extras: "11-extras"
+    tasks: "11-tasks"
+    due: "11-due"
+
   # - title: 'Fine Tuning Instruments'
   #   session: 12
   #   date: "April 6, 2022"
