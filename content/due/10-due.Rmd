@@ -28,6 +28,7 @@ checked <- as.character(fontawesome::fa("check-circle", fill = "#89f0de", height
 wk_post <- tibble(
 
 "Description" = c("Read <i>Mixed Methods Research Design</i>",
+                  "Read <i>Integrating quantitative and qualitative research: how is it done?</i>",
                   "Read <i>Toward a Conceptual Framework for Mixed-Method Evaluation Designs</i>",
                   "Read <i>The Value of Mixed Methods Research: A Mixed Methods Study</i>",
                   "Review the in-class presentation <i>Survey Design</i>",
@@ -35,6 +36,7 @@ wk_post <- tibble(
                   "Create a draft survey in Qualtrics and review others"),
 
 "Details" = c("<a href='/readings/10-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
+              "<a href='/readings/10-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/readings/10-readings/#read-papers'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/readings/10-readings/#read-papers'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/materials/9-materials/#in-class-notes'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
@@ -45,10 +47,12 @@ Icon = c("",
          "",
          "",
          "",
+         "",
          "ecampus",
          ""),
 
 Site = c("", 
+         "",
          "",
          "",
          "",

@@ -114,23 +114,29 @@ unchecked <- as.character(fontawesome::fa("square", fill = "#63d6c6"))
 checked <- as.character(fontawesome::fa("check-square", fill = "#63d6c6"))
 
 pdf_link1 <- function() {
- paste0("<a href='/handouts/Greene,%20Caracelli%20&%20Graham%20(1989).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
+ paste0("<a href='/handouts/Bryman%20(2006).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
 }
 
 pdf_link2 <- function() {
+ paste0("<a href='/handouts/Greene,%20Caracelli%20&%20Graham%20(1989).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
+}
+
+pdf_link3 <- function() {
  paste0("<a href='/handouts/McKim%20(2017).pdf' target='_blank'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='40'>", "</a>")
 }
 
 readings <- tibble(
   
-  paper <- c("Greene, J. C., Caracelli, V. J., & Graham, W. F. (1989). Toward a Conceptual Framework for Mixed-Method Evaluation Designs. <i>Educational Evaluation and Policy Analysis 11</i>(3), 255-274. <a href='https://doi.org/10.3102/01623737011003255' target='_blank'>https://doi.org/10.3102/01623737011003255</a>",
-             
-             "McKim, C. A. (2017). The Value of Mixed Methods Research: A Mixed Methods Study. <i>Journal of Mixed Methods Research, 11</i>(2), 202–222. <a href='https://doi.org/10.1177/1558689815607096' target='_blank'>https://doi.org/10.1177/1558689815607096</a>"
+  paper <- c(
+           "Bryman, A. (2006). Integrating quantitative and qualitative research: how is it done? <i>Qualitative Research, 6</i>(1), 97–113.<a href='https://doi.org/10.1177/1468794106058877' target='_blank'>https://doi.org/10.1177/1468794106058877</a>",
+           "Greene, J. C., Caracelli, V. J., & Graham, W. F. (1989). Toward a Conceptual Framework for Mixed-Method Evaluation Designs. <i>Educational Evaluation and Policy Analysis 11</i>(3), 255-274. <a href='https://doi.org/10.3102/01623737011003255' target='_blank'>https://doi.org/10.3102/01623737011003255</a>",
+            "McKim, C. A. (2017). The Value of Mixed Methods Research: A Mixed Methods Study. <i>Journal of Mixed Methods Research, 11</i>(2), 202–222. <a href='https://doi.org/10.1177/1558689815607096' target='_blank'>https://doi.org/10.1177/1558689815607096</a>"
   ),
   
   download <- c(
     pdf_link1(),
-    pdf_link2()
+    pdf_link2(),
+    pdf_link3()
   ),
   
   .name_repair = "minimal"
@@ -148,8 +154,8 @@ readings %>%
       align = 'lc') %>%
   kable_paper(full_width = F) %>%
   column_spec(1, width = "30em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
-  column_spec(2, width = "10em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>% 
-  row_spec(0:2, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
+  column_spec(2, width = "10em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
+  row_spec(0:3, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
 ```
 </center>
   

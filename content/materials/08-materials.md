@@ -74,15 +74,6 @@ td, th, tr, table {
     border: 0 !important;
     border-spacing:0 !important;
   }
-  
-.box{
-    float:left;
-    margin-right:10%;
-}
-
-.clear{
-    clear:both;
-}
 
 .wrapper{
   display:inline-flex;
@@ -159,6 +150,33 @@ td, th, tr, table {
 i.fa.fa-save{
 color:#ffffff;
 }
+
+.holder {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigcol { 
+flex: 0 0 75%; 
+} 
+
+.smallcol{ 
+flex: 0 0 25%; 
+}
+
+.clear{
+    clear:both;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -190,15 +208,18 @@ $(document).ready(function(){
 </center>
 <br>
 <center>
+<center>
 
-<div class="box">
+<div class="holder">
 
-<iframe src="/slides/Week 8/Slides-Week-8a-pres.html" width="185%" height="400px" data-external="1">
+<div class="bigcol">
+
+<iframe src="/slides/Week 8/Slides-Week-8a-pres.html" width="140%" height="400px" data-external="1">
 </iframe>
 
 </div>
 
-<div class="box">
+<div class="smallcol">
 
 <table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -210,31 +231,7 @@ $(document).ready(function(){
 <tbody>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8a-pres.html"><img src="/logos/web-ico.png" alt="QED Intro Page" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8a-pres.html"><img src="/logos/web-ico.png" alt="Survey Design Page" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -248,7 +245,7 @@ Larger version of the presentation
 </tr>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8a-flat.pdf"><img src="/logos/pdf-ico.png" alt="QED Intro PDF" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8a-flat.pdf"><img src="/logos/pdf-ico.png" alt="Survey Design PDF" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -258,6 +255,8 @@ PDF of the presentation
 </tr>
 </tbody>
 </table>
+
+</div>
 
 </div>
 
@@ -267,15 +266,18 @@ PDF of the presentation
 
 </center>
 <center>
+<center>
 
-<div class="box">
+<div class="holder">
 
-<iframe src="/slides/Week 8/Slides-Week-8b-pres.html" width="185%" height="400px" data-external="1">
+<div class="bigcol">
+
+<iframe src="/slides/Week 8/Slides-Week-8b-pres.html" width="140%" height="400px" data-external="1">
 </iframe>
 
 </div>
 
-<div class="box">
+<div class="smallcol">
 
 <table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -287,31 +289,7 @@ PDF of the presentation
 <tbody>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8b-pres.html"><img src="/logos/web-ico.png" alt="QED Intro Page" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8b-pres.html"><img src="/logos/web-ico.png" alt="Survey Design Page" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -325,7 +303,7 @@ Larger version of the presentation
 </tr>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8b-flat.pdf"><img src="/logos/pdf-ico.png" alt="QED Intro PDF" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8b-flat.pdf"><img src="/logos/pdf-ico.png" alt="Survey Design PDF" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -335,6 +313,8 @@ PDF of the presentation
 </tr>
 </tbody>
 </table>
+
+</div>
 
 </div>
 
@@ -344,15 +324,18 @@ PDF of the presentation
 
 </center>
 <center>
+<center>
 
-<div class="box">
+<div class="holder">
 
-<iframe src="/slides/Week 8/Slides-Week-8c-pres.html" width="185%" height="400px" data-external="1">
+<div class="bigcol">
+
+<iframe src="/slides/Week 8/Slides-Week-8c-pres.html" width="140%" height="400px" data-external="1">
 </iframe>
 
 </div>
 
-<div class="box">
+<div class="smallcol">
 
 <table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -364,31 +347,7 @@ PDF of the presentation
 <tbody>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8c-pres.html"><img src="/logos/web-ico.png" alt="QED Intro Page" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8c-pres.html"><img src="/logos/web-ico.png" alt="Survey Design Page" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -402,7 +361,7 @@ Larger version of the presentation
 </tr>
 <tr>
 <td style="text-align:center;width: 25em; padding-left: 200px;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
-<a href="/slides/Week%208/Slides-Week-8c-flat.pdf"><img src="/logos/pdf-ico.png" alt="QED Intro PDF" width="35"></a>
+<a href="/slides/Week%208/Slides-Week-8c-flat.pdf"><img src="/logos/pdf-ico.png" alt="Survey Design PDF" width="35"></a>
 </td>
 </tr>
 <tr>
@@ -412,6 +371,8 @@ PDF of the presentation
 </tr>
 </tbody>
 </table>
+
+</div>
 
 </div>
 

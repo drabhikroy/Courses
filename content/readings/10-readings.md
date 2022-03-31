@@ -110,6 +110,10 @@ td, th, tr, table {
  </thead>
 <tbody>
   <tr>
+   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Bryman, A. (2006). Integrating quantitative and qualitative research: how is it done? <i>Qualitative Research, 6</i>(1), 97–113.<a href="https://doi.org/10.1177/1468794106058877" target="_blank">https://doi.org/10.1177/1468794106058877</a> </td>
+   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> <a href="/handouts/Bryman%20(2006).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
+  </tr>
+  <tr>
    <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Greene, J. C., Caracelli, V. J., &amp; Graham, W. F. (1989). Toward a Conceptual Framework for Mixed-Method Evaluation Designs. <i>Educational Evaluation and Policy Analysis 11</i>(3), 255-274. <a href="https://doi.org/10.3102/01623737011003255" target="_blank">https://doi.org/10.3102/01623737011003255</a> </td>
    <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> <a href="/handouts/Greene,%20Caracelli%20&amp;%20Graham%20(1989).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
   </tr>

@@ -66,15 +66,6 @@ td, th, tr, table {
     border: 0 !important;
     border-spacing:0 !important;
   }
-  
-.box{
-    float:left;
-    margin-right:10%;
-}
-
-.clear{
-    clear:both;
-}
 
 .wrapper{
   display:inline-flex;
@@ -151,6 +142,33 @@ td, th, tr, table {
 i.fa.fa-save{
 color:#ffffff;
 }
+
+.holder {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigcol { 
+flex: 0 0 75%; 
+} 
+
+.smallcol{ 
+flex: 0 0 25%; 
+}
+
+.clear{
+    clear:both;
+}
 </style>
 
 <script>
@@ -194,31 +212,28 @@ library(kableExtra)
 
 <center>
 
-<div class="box">
-```{r echo = FALSE, out.width="185%", fig.align='left'}
+<center>
+<div class="holder">
+
+<div class="bigcol">
+```{r echo = FALSE, out.width="140%", fig.align='left'}
 knitr::include_url("/slides/Week 8/Slides-Week-8a-pres.html")
 ```
 </div>
 
-<div class="box">
+<div class="smallcol">
 ```{r echo = FALSE, fig.align='right'}
 html_link <- function() {
-  paste0("<a href='/slides/Week 8/Slides-Week-8a-pres.html'>", "<img src='/logos/web-ico.png' alt='QED Intro Page' width='35'>", "</a>")
+  paste0("<a href='/slides/Week 8/Slides-Week-8a-pres.html'>", "<img src='/logos/web-ico.png' alt='Survey Design Page' width='35'>", "</a>")
 }
 
 pdf_link <- function() {
- paste0("<a href='/slides/Week 8/Slides-Week-8a-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='QED Intro PDF' width='35'>", "</a>")
+ paste0("<a href='/slides/Week 8/Slides-Week-8a-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='Survey Design PDF' width='35'>", "</a>")
 }
 
 tibble(
   
-  html <- c("", 
-            "", 
-            "",
-            "",
-            "", 
-            "",
-            html_link(),
+  html <- c(html_link(),
             "Larger version of the presentation",
             "",
             pdf_link(),
@@ -230,42 +245,40 @@ tibble(
       align = 'c') %>%
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
-  row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
-
-
+  row_spec(1:5, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </div>
-<div class="clear"></div>
 
+</div>
+
+<div class="clear">
+</div>
 </center>
 
 <center>
 
-<div class="box">
-```{r echo = FALSE, out.width="185%", fig.align='left'}
+<center>
+<div class="holder">
+
+<div class="bigcol">
+```{r echo = FALSE, out.width="140%", fig.align='left'}
 knitr::include_url("/slides/Week 8/Slides-Week-8b-pres.html")
 ```
 </div>
 
-<div class="box">
+<div class="smallcol">
 ```{r echo = FALSE, fig.align='right'}
 html_link <- function() {
-  paste0("<a href='/slides/Week 8/Slides-Week-8b-pres.html'>", "<img src='/logos/web-ico.png' alt='QED Intro Page' width='35'>", "</a>")
+  paste0("<a href='/slides/Week 8/Slides-Week-8b-pres.html'>", "<img src='/logos/web-ico.png' alt='Survey Design Page' width='35'>", "</a>")
 }
 
 pdf_link <- function() {
- paste0("<a href='/slides/Week 8/Slides-Week-8b-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='QED Intro PDF' width='35'>", "</a>")
+ paste0("<a href='/slides/Week 8/Slides-Week-8b-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='Survey Design PDF' width='35'>", "</a>")
 }
 
 tibble(
   
-  html <- c("", 
-            "", 
-            "",
-            "",
-            "", 
-            "",
-            html_link(),
+  html <- c(html_link(),
             "Larger version of the presentation",
             "",
             pdf_link(),
@@ -277,42 +290,40 @@ tibble(
       align = 'c') %>%
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
-  row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
-
-
+  row_spec(1:5, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </div>
-<div class="clear"></div>
 
+</div>
+
+<div class="clear">
+</div>
 </center>
 
 <center>
 
-<div class="box">
-```{r echo = FALSE, out.width="185%", fig.align='left'}
+<center>
+<div class="holder">
+
+<div class="bigcol">
+```{r echo = FALSE, out.width="140%", fig.align='left'}
 knitr::include_url("/slides/Week 8/Slides-Week-8c-pres.html")
 ```
 </div>
 
-<div class="box">
+<div class="smallcol">
 ```{r echo = FALSE, fig.align='right'}
 html_link <- function() {
-  paste0("<a href='/slides/Week 8/Slides-Week-8c-pres.html'>", "<img src='/logos/web-ico.png' alt='QED Intro Page' width='35'>", "</a>")
+  paste0("<a href='/slides/Week 8/Slides-Week-8c-pres.html'>", "<img src='/logos/web-ico.png' alt='Survey Design Page' width='35'>", "</a>")
 }
 
 pdf_link <- function() {
- paste0("<a href='/slides/Week 8/Slides-Week-8c-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='QED Intro PDF' width='35'>", "</a>")
+ paste0("<a href='/slides/Week 8/Slides-Week-8c-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='Survey Design PDF' width='35'>", "</a>")
 }
 
 tibble(
   
-  html <- c("", 
-            "", 
-            "",
-            "",
-            "", 
-            "",
-            html_link(),
+  html <- c(html_link(),
             "Larger version of the presentation",
             "",
             pdf_link(),
@@ -324,11 +335,12 @@ tibble(
       align = 'c') %>%
   kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "25em", extra_css = "padding-left: 200px;") %>%
-  row_spec(1:11, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
-
-
+  row_spec(1:5, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </div>
-<div class="clear"></div>
 
+</div>
+
+<div class="clear">
+</div>
 </center>

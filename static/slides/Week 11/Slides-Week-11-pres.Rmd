@@ -1,7 +1,7 @@
 ---
-title: 'Mixing Research Methodologies'
-subtitle: "A Brief Introduction for EDP 612 Students, Spring 2022"
-author: "Dr. Reagan Curtis"
+title: 'Someone Help, My Methods Are All Mixed Up'
+subtitle: 'EDP 612 Week 11'
+author: Dr. Abhik Roy (& numerous pieces stolen from Dr. Reagan Curtis)
 output: 
  xaringan::moon_reader:
    css: ['xaringan-themer.css', 'custom.css']
@@ -146,20 +146,37 @@ layout: true
 
 ---
 
-# <span style="color:#A9D18E">Shameless “plug”</span>
+# <span style="color:#c1e7f3">Shameless plug</span>
 
-EDP 618 Mixing Research Methodologies (Su/Fall 2022)
+--
+
+<b>EDP 618 Mixing Research Methodologies</b>
+<br>
+
+--
+
+.pull-left[
+> <span style="color:#00ecff">Summer II Online CRN 51971 with Dr. Reagan Curtis</span>
+]
+
+--
+
+.pull-right[
+> <span style="color:#00ff93">Fall Face-to-face CRN 87727 with me</span>
+]
 
 --
 
 .pull-left[
 This course is designed to allow you to acquire an understanding of the choices available for and processes involved in conducting mixed methodological research and evaluation. We will work together to identify potential research questions and/or evaluation foci you are interested in and for which mixed methodological approaches could usefully be applied. We will read and discuss both examples of mixed methodological research and writers discussing important issues to think about when doing mixed methods work. 
+<br>
+<br>
+<br>
+Here’s the book we use for EDP 618, and much of what we will discuss today is in there <i class="fas fa-angle-double-right" style="color:#00ecff"></i><i class="fas fa-angle-double-right" style="color:#00ff93"></i>
 ]
 
 .pull-right[
-Here’s the book we use for EDP 618, and much of what we will discuss today is in there
-<br>
-<br>
+
 <center>
 <img src="img/image1.png" width="45%">
 </center>
@@ -167,9 +184,67 @@ Here’s the book we use for EDP 618, and much of what we will discuss today is 
 
 ---
 
+#  Plan for this PowerPoint 
+
+- General qualitative (vs. quantitative) orientation 
+
+--
+
+- General mixed methodological orientation
+
+--
+
+- Matching research questions to appropriate methodologies
+
+--
+
+- Mixed methodologies and models
+
+--
+
+- Logistic constraints and considerations
+
+---
+
+#  Remember? Contrasting Paradigms      
+
+.pull-left[
+<center>
+<b><span style="color:#bbf4b9">Positivist</span></b>
+</center>
+<br>
+- Reality is single, tangible, fragmentable , and measureable
+
+- Knower and known are independent – objectivity
+
+- Time- and context-free generalizations are possible – Big “T” Truth, [etic](http://faculty.irsc.edu/FACULTY/JLett/Article%20on%20Emics%20and%20Etics.htm) preference
+
+- There are real causes, precedent to or simultaneous with effects
+
+- Inquiry is value-free
+]
+
+.pull-right[
+<center>
+<b><span style="color:#f2b9f4">Naturalist</span></b>
+</center>
+<br>
+- Realities are multiple, socially constructed, and holistic
+
+- Knower and known are interactive, inseparable
+
+- Only time- and context-bound generalizations are possible – truths are [idiographic](http://en.wikipedia.org/wiki/Idiographic), 
+]
+
+.footnote[
+Naturalistic Inquiry by Lincoln & Guba (1985)
+]
+
+---
+
 #  Activating prior knowledge 
 
-<span style="color:#A9D18E">Pair-Share Activity<span>
+<span style="color:#b9bbf4">Pair-Share Activity<span>
 
 --
 
@@ -195,11 +270,11 @@ Here’s the book we use for EDP 618, and much of what we will discuss today is 
 
 --
 
-<span style="color:#A9D18E">Pair-Share</span>: What do you know about philosophical foundations, especially epistemologies, related to qualitative and quantitative research traditions?
+<span style="color:#b9bbf4">Pair-Share</span>: What do you know about philosophical foundations, especially epistemologies, related to qualitative and quantitative research traditions?
 
 --
 
-<span style="color:#A9D18E">Whole class</span>: How do you see these fitting together (or not) in mixed methodological research?
+<span style="color:#b9bbf4">Whole class</span>: How do you see these fitting together (or not) in mixed methodological research?
 
 --
 
@@ -222,6 +297,45 @@ More details; some dissension<br>
 
 ---
 
+#  Triangulation 
+
+> By <b>data source</b> - multiple data collection points
+
+--
+
+> By <b>researcher</b> – multiple researchers
+
+--
+
+> By <b>theory</b> – multiple researchers with different theoretical perspectives
+
+--
+
+> By <b>method</b> – multiple methods
+
+.pull-right[
+<center>
+Looking for more detail? Look over Luttrell (2005)<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="downloads/Luttrell%20(2005).pdf" target='_blank' download="Luttrell (2005)">
+<img src="img/pdf-ico.png" alt="Luttrell (2005)" width='35'>
+</a>
+<center>
+<br>
+
+]
+
+--
+
+> By <b>verification</b> – member checking, inquiry audit
+
+--
+
+> By <b>examination of subjectivity</b> – researcher journaling, inquiry audit
+
+
+
+
+---
+
 #  A working definition of MMR 
 
 --
@@ -233,8 +347,16 @@ Mixed methodological approaches use paradigms, data sources, and/or analytic pro
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 .pull-right[
-Notice that there is a lot of detail NOT specified in this definition: Which paradigms, which data, which analyses, and how might they be combined?
+Notice that there is a lot of detail NOT specified in this definition: <i>Which paradigms</i>, <i>which data</i>, <i>which analyses</i>, and <i>how might they be combined</i>?
 ]
 
 ---
@@ -243,26 +365,28 @@ Notice that there is a lot of detail NOT specified in this definition: Which par
 
 --
 
-Inquiries designed to understand “workability” of potential “lines of action” or basis for claims of “warranted assertions”
+Inquiries designed to understand <span style="color:#ffdfba">workability</span> of potential <span style="color:#ffb3ba">lines of Action</span> or basis for claims of <span style="color:#bae1ff">warranted assertions</span>
 
 --
 
-> “Lines of Action” (George Herbert Mead)
+> <span style="color:#ffb3ba">lines of Action</span> -  <i>George Herbert Mead</i>
 
-> “Workability” (both William James and John Dewey)
+> <span style="color:#ffdfba">workability</span> -  both William James and John Dewey
 
-> “Warranted assertions” (John Dewey)
-
---
-
-<br>
-<br>
-Rather than focus on nature of reality or the possibility of objective truth, focus on “What are the likely consequences of believing or acting on ______?”, and combine elements of qualitative and quantitative approaches to achieve stronger foundations for action.
+> <span style="color:#bae1ff">warranted assertions</span> (John Dewey)
 
 --
 
 <br>
 <br>
+.pull-left[
+<span style="text-align: center; display: inline-block; width: 100%;"><span style="display: inline-block;">Rather than focus on nature of reality or the possibility of objective truth, focus on <br><br><i>What are the likely consequences of believing or acting on</span><br>
+<span style="display: inline-block; border-bottom: 1px solid white; width: 200px"></span>,<br> and combine elements of qualitative and quantitative<br> approaches to achieve stronger foundations for action.</i>
+</span>
+]
+
+--
+
 .pull-right[
 Looking for more depth? Read Morgan (2007) from the very first issue of the *Journal of Mixed Methods Research*<br>
 <center>
@@ -274,27 +398,65 @@ Looking for more depth? Read Morgan (2007) from the very first issue of the *Jou
 
 ---
 
-#  The Reading: Purposes for mixing 
+#  Purposes for mixing 
 
 --
+
+<br>
+<br>
+<br>
+.pull-left[
 
 <font size="+2">
-Greene, Caracelli , & Graham (1989)
+<span style="color:#ff99ff">
+Greene, Caracelli, & Graham (1989)
+</span>
 </font>
+
+<span style="color:#ffe6ff">
+<i>A critical source for understanding the multiplicity of purposes mixed methods research is suited to address. Provides a “language” (actually one of several) for thinking about and describing mixed methods components in your evaluation, your research (dissertation?), and in sources your review.</i>
+<span>
+<br>
+<br>
+<center>
+<a href="downloads/Greene,%20Caracelli,%20&%20Graham%20(1989).pdf" target='_blank' download="Greene, Caracelli, & Graham (1989)">
+<img src="img/pdf-ico.png" alt="Greene, Caracelli, & Graham (1989)" width='35'>
+</center>
+</a>
+]
 
 --
 
-A critical source for understanding the multiplicity of purposes mixed methods research is suited to address. Provides a “language” (actually one of several) for thinking about and describing mixed methods components in your evaluation, your research (dissertation?), and in sources your review.
+.pull-right[
+
+<font size="+2">
+<span style="color:#99ff99">
+Bryman (2006)
+</span>
+</font>
+
+<span style="color:#e6ffe6">
+<i>A combination of some elements derived from the ideas that mixed methods research reflects a tendency for the rationales for using multi-strategy research not to be thought
+through sufficiently and that multi-strategy research provides such a wealth of data that researchers discover uses of the ensuing findings that they had not anticipated.</i>
+</span>
+<br>
+<br>
+<center>
+<a href="downloads/Bryman%20(2006).pdf" target='_blank' download="Bryman (2006)">
+<img src="img/pdf-ico.png" alt="Bryman (2006)" width='35'>
+</center>
+</a>
+]
 
 ---
 
 <center>
-<img src="img/image2.png" width="65%">
+<img src="img/image2.png" width="85%">
 </center>
 
 ---
 
-#  5 Mixed Methods Purposes 
+#  5 Mixed Methods Approaches 
 
 --
   
@@ -333,7 +495,7 @@ Way, Stauber, Nakkula, and London (1994) began with quantitative measures of dep
 --
 
 <br>
-<span style="color:yellow">
+<span style="color:#ffde59">
 Authors identified a puzzling finding: Substance use predicted depression at the suburban high school, but not at inner city high school.
 </span>
 
@@ -358,7 +520,7 @@ Idler, Hudson, and Leventhal (1999), working with 159 elderly African Americans,
 --
 
 <br>
-<span style="color:yellow">
+<span style="color:#ffde59">
 They initially analyzed the two data sets separately, but after coding the qualitative responses, they transformed qualitative codes into quantitative scores.
 
 --
@@ -398,7 +560,7 @@ Concurrent Triangulation
 
 ---
 
-#  What questions do you have for me at this point? 
+#  Something
 
 --
 
@@ -416,17 +578,17 @@ Concurrent Triangulation
 Parting Shot: Truly mixed designs optimize potentials for synergy across the entire lifespan of the study, while many designs are only superficially mixed or mixed in name only.
 <br>
 <br>
-Feel free to contact me in the future:<br>
-[Reagan.Curtis@mail.wvu.edu](mailto:Reagan.Curtis@mail.wvu.edu)
+Feel free to contact either [me](mailto:abhik.roy@mail.wvu.edu) or [Dr. Curtis](mailto:Reagan.Curtis@mail.wvu.edu) to discuss a MMR idea or if you just have a question about it
 ]
 
 ---
 
-# That's It!
+#  That’s It! 
+
+Any questions?
 
 --
 
-<br>
 <br>
 <br>
 <br>
@@ -444,3 +606,4 @@ Feel free to contact me in the future:<br>
 <center>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><br />This work is licensed under a <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
 </center>
+

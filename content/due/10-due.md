@@ -35,6 +35,11 @@ editor_options:
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
   </tr>
   <tr>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Read <i>Integrating quantitative and qualitative research: how is it done?</i> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/readings/10-readings/#read-the-text"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+  </tr>
+  <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Read <i>Toward a Conceptual Framework for Mixed-Method Evaluation Designs</i> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/readings/10-readings/#read-papers"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>

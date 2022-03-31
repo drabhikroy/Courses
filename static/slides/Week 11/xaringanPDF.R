@@ -4,3 +4,4 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 remotes::install_github("rstudio/chromote")
 source("https://git.io/xaringan2pdf")
 xaringan_to_pdf("Slides-Week-11-flat.html")
+
