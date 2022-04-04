@@ -87,6 +87,12 @@ iframe {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
 <script type="text/javascript">
 iFrameResize({log:true, enablePublicMethods:true, heightCalculationMethod:'lowestElement'}, '#tabIframe')
@@ -119,30 +125,30 @@ Students will be expected to develop the following knowledge, skills, and abilit
 <small>You can move back and forth using <kbd>←</kbd> and <kbd>→</kbd> and toggle fullscreen by pressing <kbd>F</kbd>. Just press <kbd>O</kbd>[^1] at any point in your slideshow and a display of all slides, called tile view, will appear. Click on a slide to go there or press <kbd>O</kbd> to exit tile view. For more options, press <kbd>H</kbd> for help.</small>
 
 <center>
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:center;">
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 </th>
-<th style="text-align:center;">
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Larger version of the introduction
 </td>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 PDF of the introduction
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-<a href="/slides/Week%201/Slides-Week-1a.html"><img src="/logos/web-ico.png" alt="Slack icon" width="30"></a>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+<a href="/slides/Week%201/Slides-Week-1a-pres.html"><img src="/logos/web-ico.png" alt="Slack icon" width="30"></a>
 </td>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-<a href="/slides/Week%201/Slides-Week-1a.pdf"><img src="/logos/pdf-ico.png" alt="Slack icon" width="30"></a>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+<a href="/slides/Week%201/Slides-Week-1a-flat.pdf"><img src="/logos/pdf-ico.png" alt="Slack icon" width="30"></a>
 </td>
 </tr>
 </tbody>
@@ -225,26 +231,26 @@ But there are multiple resources both online and locally that are available. Pri
 <table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:center;">
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 </th>
-<th style="text-align:center;">
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Larger version of the presentation
 </td>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 PDF of the helpfile
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 <a href="/slides/Descriptions/Slides-MRE.html"><img src="/logos/web-ico.png" alt="Slack icon" width="30"></a>
 </td>
-<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 <a href="/slides/Descriptions/Slides-MRE.pdf"><img src="/logos/pdf-ico.png" alt="Slack icon" width="30"></a>
 </td>
 </tr>
@@ -261,7 +267,7 @@ To move back and forth, use <kbd>←</kbd> and <kbd>→</kbd> and toggle fullscr
 You can find descriptions for all the assignments on the [tasks page](/tasks/).
 
 <center>
-<table class=" lightable-paper table table-striped table-hover table-condensed table-responsive" style="font-family: Roboto Condensed; margin-left: auto; margin-right: auto; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:center;color: #f7f7f7 !important;">
@@ -274,34 +280,34 @@ Task
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 15
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Engagement
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 35
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Literature Reviews
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 15
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Presentation
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 35
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 Weeklies
 </td>
 </tr>
@@ -312,7 +318,7 @@ Weeklies
 <br />
 
 <center>
-<table class=" lightable-paper table table-striped table-hover table-condensed table-responsive" style="font-family: Roboto Condensed; margin-left: auto; margin-right: auto; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:center;color: #f7f7f7 !important;">
@@ -325,42 +331,42 @@ Range
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;width: 5em; width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 A
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 90–100%
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 B
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 80%-89%
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 C
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 70–79%
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 D
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 60–69%
 </td>
 </tr>
 <tr>
-<td style="text-align:center;width: 5em; width: 5em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 F
 </td>
-<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;">
+<td style="text-align:left;width: 12em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
 &lt;60%
 </td>
 </tr>

@@ -89,7 +89,14 @@ iframe {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing: 0 !important;
+    border-color: transparent;
+  }
 </style>
+  
 
 ```{js echo=FALSE}
 iFrameResize({log:true, enablePublicMethods:true, heightCalculationMethod:'lowestElement'}, '#tabIframe')
@@ -126,11 +133,11 @@ knitr::include_url("/slides/Week 1/Slides-Week-1a-pres.html")
 ```{r echo=FALSE}
 
 html_link <- function() {
-  paste0("<a href='/slides/Week 1/Slides-Week-1a.html'>", "<img src='/logos/web-ico.png' alt='Slack icon' width='30'>", "</a>")
+  paste0("<a href='/slides/Week 1/Slides-Week-1a-pres.html'>", "<img src='/logos/web-ico.png' alt='Slack icon' width='30'>", "</a>")
 }
 
 pdf_link <- function() {
- paste0("<a href='/slides/Week 1/Slides-Week-1a.pdf'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='30'>", "</a>")
+ paste0("<a href='/slides/Week 1/Slides-Week-1a-flat.pdf'>", "<img src='/logos/pdf-ico.png' alt='Slack icon' width='30'>", "</a>")
 }
 
 textitems <- tibble(
@@ -151,9 +158,9 @@ kable(textitems,
       col.names = c("", ""),
       escape = FALSE,
       align = 'cc') %>%
-  kable_styling(full_width = FALSE) %>%
-  column_spec(1, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
-  column_spec(2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') 
+   kable_paper(full_width = FALSE) %>%
+  column_spec(1:2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
+  row_spec(0:2, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </center>
 
@@ -252,8 +259,8 @@ kbl(textitems,
       escape = FALSE,
       align = 'cc') %>%
   kable_paper(full_width = FALSE) %>%
-  column_spec(1, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
-  column_spec(2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') 
+  column_spec(1:2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
+  row_spec(0:2, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
 ```
 </center>
 
@@ -291,17 +298,13 @@ assignments %>%
   kableExtra::kable(align='cl',
                col.names = c("Percent", "Task"),
       ) %>%
-  kable_paper(html_font = "Roboto Condensed") %>%
-  kable_styling(position = "center",
-                bootstrap_options = c("striped", 
-                                      "hover", 
-                                      "condensed", 
-                                      "responsive"),
-                full_width = FALSE) %>%
+   kable_paper(position = "center",
+               full_width = FALSE) %>%
   column_spec(1, width = "5em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(2, width = "12em", color = "#ffffff",
               extra_css = 'vertical-align: middle !important;') %>%
-  row_spec(0, color = "#f7f7f7")
+  row_spec(0, color = "#f7f7f7") %>%
+  row_spec(1:4, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
 ```
 
 </center>
@@ -314,18 +317,13 @@ assignments %>%
 grading %>%
   kableExtra::kable(align='cl',
                col.names = c("Grade", "Range")) %>%
-   kable_paper(html_font = "Roboto Condensed") %>%
-   kable_styling(position = "center",
-                bootstrap_options = c("striped", 
-                                      "hover", 
-                                      "condensed", 
-                                      "responsive"),
-                full_width = FALSE) %>%
-  column_spec(1, width = "5em") %>%
+   kable_paper(position = "center",
+               full_width = FALSE) %>%
   column_spec(1, width = "5em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(2, width = "12em", color = "#ffffff",
               extra_css = 'vertical-align: middle !important;') %>%
-  row_spec(0, color = "#f7f7f7")
+  row_spec(0, color = "#f7f7f7") %>%
+  row_spec(1:5, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent") 
 ```
 
 </center>
