@@ -77,15 +77,6 @@ td, th, tr, table {
     border-spacing:0 !important;
   }
   
-.box{
-    float:left;
-    margin-right:10%;
-}
-
-.clear{
-    clear:both;
-}
-
 .wrapper{
   display:inline-flex;
 }.wrapper .icon{
@@ -156,6 +147,33 @@ td, th, tr, table {
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
   background:#55959e;
+}
+
+.holder {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigcol {
+flex: 0 0 75%;
+}
+
+.smallcol{
+flex: 0 0 25%;
+}
+  
+.clear{
+    clear:both;
 }
 
 i.fa.fa-save{
