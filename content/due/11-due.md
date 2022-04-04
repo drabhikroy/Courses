@@ -67,12 +67,17 @@ editor_options:
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Review the criteria for <i>L5: The Second Draft</i> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/deliverables/05-l5/"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="NA" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Administer your survey </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/11-tasks/#administer-a-draft-survey"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://wvu.qualtrics.com/" target="_blank"><img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27"></a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Begin the training module <i>Introduction to R</i> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/11-tasks/#get-started-with-r"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://www.datacamp.com/courses/free-introduction-to-r" target="_blank"><img src="/logos/dc-ico.png" alt="DataCamp icon" width="24"></a> </td>
   </tr>
 </tbody>
 </table>

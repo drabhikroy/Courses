@@ -40,7 +40,7 @@ Quasi-Experimental Designs</i>",
 
 Icon = c("", 
          "",
-         "ecampus",
+         "",
          ""),
 
 Site = c("", 

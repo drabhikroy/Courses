@@ -32,7 +32,7 @@ wk_post <- tibble(
                   "Read <i>Toward a Conceptual Framework for Mixed-Method Evaluation Designs</i>",
                   "Read <i>The Value of Mixed Methods Research: A Mixed Methods Study</i>",
                   "Review the in-class presentation <i>Survey Design</i>",
-                  "Review the criteria for <i>L4: The First Draft</i>",
+                  "Submit <i>L4: The First Draft</i>",
                   "Create a draft survey in Qualtrics and review others"),
 
 "Details" = c("<a href='/readings/10-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
@@ -49,15 +49,15 @@ Icon = c("",
          "",
          "",
          "ecampus",
-         ""),
+         "qualtrics"),
 
 Site = c("", 
          "",
          "",
          "",
          "",
-         "",
-         "")
+         "https://ecampus.wvu.edu",
+         "https://wvu.qualtrics.com/")
 )
 ```
 
@@ -68,6 +68,7 @@ wk_post %>%
     str_detect(`Icon`, "slack") ~ '<img src="/logos/slack-ico.png" alt="Slack icon" width="25">',
     str_detect(`Icon`, "ecampus") ~ '<img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25">',
     str_detect(`Icon`, "external") ~ '<div style="font-size: 0.5rem;"><i class="fa fa-external-link fa-2x" aria-hidden="true" style="color:#559977"></i></div>',
+    str_detect(`Icon`, "qualtrics") ~ '<img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27">',
     TRUE ~ NA_character_
       )
     ) %>%

@@ -35,7 +35,8 @@ wk_post <- tibble(
                   "Review the in-class presentation <i>Mixing Research Methodologies</i>",
                   "Check out some resources that could help with extracting infromation from articles and visualizing literature reviews",
                   "Review the criteria for <i>L5: The Second Draft</i>",
-                  "Administer your survey"),
+                  "Administer your survey",
+                  "Begin the training module <i>Introduction to R</i>"),
 
 "Details" = c("<a href='/readings/11-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/readings/11-readings/#read-the-text'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
@@ -45,7 +46,8 @@ wk_post <- tibble(
               "<a href='/materials/11-materials/#in-class-notes'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/extras/11-extras/'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/deliverables/05-l5/'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
-              "<a href='/tasks/11-tasks/#administer-a-draft-survey'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>"),
+              "<a href='/tasks/11-tasks/#administer-a-draft-survey'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
+              "<a href='/tasks/11-tasks/#get-started-with-r'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>"),
 
 Icon = c("", 
          "",
@@ -54,8 +56,9 @@ Icon = c("",
          "",
          "",
          "",
-         "ecampus",
-         ""),
+         "",
+         "qualtrics",
+         "dc"),
 
 Site = c("", 
          "",
@@ -65,7 +68,8 @@ Site = c("",
          "",
          "", 
          "",
-         "")
+         "https://wvu.qualtrics.com/",
+         "https://www.datacamp.com/courses/free-introduction-to-r")
 )
 ```
 
@@ -76,6 +80,8 @@ wk_post %>%
     str_detect(`Icon`, "slack") ~ '<img src="/logos/slack-ico.png" alt="Slack icon" width="25">',
     str_detect(`Icon`, "ecampus") ~ '<img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25">',
     str_detect(`Icon`, "external") ~ '<div style="font-size: 0.5rem;"><i class="fa fa-external-link fa-2x" aria-hidden="true" style="color:#559977"></i></div>',
+        str_detect(`Icon`, "qualtrics") ~ '<img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27">',
+    str_detect(`Icon`, "dc") ~ '<img src="/logos/dc-ico.png" alt="DataCamp icon" width="24">',
     TRUE ~ NA_character_
       )
     ) %>%

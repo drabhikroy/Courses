@@ -42,7 +42,7 @@ editor_options:
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Continue CITI Training </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/02-tasks/#continue-citi-ethics-training"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://www.citiprogram.org/Shibboleth.sso/Login?target=https%3A%2F%2Fwww.citiprogram.org%2FSecure%2FWelcome.cfm%3finst%3d827&amp;entityID=https%3A%2F%2Fidp.wvu.edu%2Fidp%2Fshibboleth" target="_blank"><img src="/logos/citi-ico.png" alt="Qualtrics icon" width="45"></a> </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Take a look at the EDP 612 research guide created by WVU libraries </td>

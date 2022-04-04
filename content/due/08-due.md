@@ -45,9 +45,9 @@ editor_options:
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Review the criteria for <i>L3: Expanding the Literature Review</i> </td>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Submit <i>L3: Expanding the Literature Review</i> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/deliverables/03-l3/"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="NA" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://ecampus.wvu.edu" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
   </tr>
 </tbody>
 </table>

@@ -30,7 +30,7 @@ wk_post <- tibble(
 "Description" = c("Read <i>Construct Validity and External Validity</i>",
                   "Review a finished version of the in-class presentation <i>Analyzing Literature</i>",
                   "Review a finished version of the in-class presentation <i>Validity and Reliability</i>",
-                  "Review the criteria for <i>L2: Selecting a Topic</i>"),
+                  "Submit <i>L2: Selecting a Topic</i>"),
 
 "Details" = c("<a href='/readings/06-readings/#read-a-chapter'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/materials/06-materials/#in-class-notes'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
@@ -45,7 +45,7 @@ Icon = c("",
 Site = c("", 
          "",
          "",
-         "")
+         "https://ecampus.wvu.edu")
 )
 ```
 

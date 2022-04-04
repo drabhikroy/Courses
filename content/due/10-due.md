@@ -55,14 +55,14 @@ editor_options:
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Review the criteria for <i>L4: The First Draft</i> </td>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Submit <i>L4: The First Draft</i> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/deliverables/04-L4/"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="NA" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://ecampus.wvu.edu" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Create a draft survey in Qualtrics and review others </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/10-tasks/#create-a-draft-survey"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://wvu.qualtrics.com/" target="_blank"><img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27"></a> </td>
   </tr>
 </tbody>
 </table>

@@ -42,14 +42,14 @@ wk_post <- tibble(
 Icon = c("", 
          "", 
          "slack",
-         "",
-         ""),
+         "qualtrics",
+         "citi"),
 
 Site = c("",
          "",
          "https://2022edp612.slack.com/archives/C02TAS3GG1J",
-         "",
-         "")
+         "https://wvu.qualtrics.com/",
+         "https://www.citiprogram.org/Shibboleth.sso/Login?target=https%3A%2F%2Fwww.citiprogram.org%2FSecure%2FWelcome.cfm%3finst%3d827&entityID=https%3A%2F%2Fidp.wvu.edu%2Fidp%2Fshibboleth")
 
 )
 ```
@@ -60,6 +60,8 @@ wk_post %>%
   mutate(Icon = case_when(
     str_detect(`Icon`, "slack") ~ '<img src="/logos/slack-ico.png" alt="Slack icon" width="25">',
     str_detect(`Icon`, "ecampus") ~ '<img src="/logos/wvu-gold-ico.png" alt="Slack icon" width="25">',
+    str_detect(`Icon`, "qualtrics") ~ '<img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27">',
+    str_detect(`Icon`, "citi") ~ '<img src="/logos/citi-ico.png" alt="Qualtrics icon" width="45">',
     TRUE ~ NA_character_
       )
     ) %>%

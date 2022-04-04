@@ -47,12 +47,12 @@ editor_options:
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Verify your Qualtrics account </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/01-tasks/#verify-qualtrics-account-login"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://wvu.qualtrics.com/" target="_blank"><img src="/logos/qualtrics-ico.png" alt="Qualtrics icon" width="27"></a> </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Begin CITI Training </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/01-tasks/#begin-citi-ethics-training"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://www.citiprogram.org/Shibboleth.sso/Login?target=https%3A%2F%2Fwww.citiprogram.org%2FSecure%2FWelcome.cfm%3finst%3d827&amp;entityID=https%3A%2F%2Fidp.wvu.edu%2Fidp%2Fshibboleth" target="_blank"><img src="/logos/citi-ico.png" alt="Qualtrics icon" width="45"></a> </td>
   </tr>
 </tbody>
 </table>

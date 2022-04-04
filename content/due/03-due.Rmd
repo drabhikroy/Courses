@@ -53,7 +53,7 @@ Icon = c("",
          "",
          "",
          "",
-         "",
+         "citi",
          "external",
          ""),
 
@@ -63,7 +63,7 @@ Site = c("",
          "",
          "",
          "",
-         "",
+         "https://www.citiprogram.org/Shibboleth.sso/Login?target=https%3A%2F%2Fwww.citiprogram.org%2FSecure%2FWelcome.cfm%3finst%3d827&entityID=https%3A%2F%2Fidp.wvu.edu%2Fidp%2Fshibboleth",
          "https://www.nejm.org/doi/full/10.1056/NEJMoa2032994",
          "")
 
@@ -77,6 +77,7 @@ wk_post %>%
     str_detect(`Icon`, "slack") ~ '<img src="/logos/slack-ico.png" alt="Slack icon" width="25">',
     str_detect(`Icon`, "ecampus") ~ '<img src="/logos/wvu-gold-ico.png" alt="Slack icon" width="25">',
     str_detect(`Icon`, "external") ~ '<div style="font-size: 0.5rem;"><i class="fa fa-external-link fa-2x" aria-hidden="true" style="color:#559977"></i></div>',
+        str_detect(`Icon`, "citi") ~ '<img src="/logos/citi-ico.png" alt="Qualtrics icon" width="45">',
     TRUE ~ NA_character_
       )
     ) %>%

@@ -47,12 +47,17 @@ editor_options:
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Review the criteria and submit <i>L1: Selecting a Topic</i> </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/deliverables/01-l1/"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="NA" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://ecampus.wvu.edu" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Continue CITI Training </td>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Finish CITI Training </td>
    <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/04-tasks/#continue-citi-ethics-training"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
-   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">  </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://ecampus.wvu.edu" target="_blank"><img src="/logos/citi-ico.png" alt="Qualtrics icon" width="45"></a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Submit your CITI Training certificate </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/tasks/04-tasks/#continue-citi-ethics-training"><span style="font-size: 25px; color: #89cff0;"><i class="fas fa-info-circle"></i></span></a> </td>
+   <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://www.citiprogram.org/Shibboleth.sso/Login?target=https%3A%2F%2Fwww.citiprogram.org%2FSecure%2FWelcome.cfm%3finst%3d827&amp;entityID=https%3A%2F%2Fidp.wvu.edu%2Fidp%2Fshibboleth" target="_blank"><img src="/logos/wvu-gold-ico.png" alt="WVU icon" width="25"></a> </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Look at a few media sources that discuss the Myers–Briggs Type Indicator (MBTI) </td>

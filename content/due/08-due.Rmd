@@ -30,7 +30,7 @@ wk_post <- tibble(
 "Description" = c("Read <i>Do It for the Culture: The Case for Memes in Qualitative Research</i>",
                   "Review a finished version of the in-class presentations <i>A Brief Overview of Qualitative Data Analysis</i>, <i>Cohen’s Kappa</i>, and <i>Plan for Second Half of Class</i>",
                   "Take a look at a Qualitative Methods repository",
-                  "Review the criteria for <i>L3: Expanding the Literature Review</i>"),
+                  "Submit <i>L3: Expanding the Literature Review</i>"),
 
 "Details" = c("<a href='/readings/08-readings/#read-a-paper'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
               "<a href='/materials/08-materials/#in-class-notes'><span style='font-size: 25px; color: #89cff0;'><i class='fas fa-info-circle'></i></span></a>",
@@ -45,7 +45,7 @@ Icon = c("",
 Site = c("", 
          "",
          "",
-         "")
+         "https://ecampus.wvu.edu")
 )
 ```
 
