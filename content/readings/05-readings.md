@@ -11,64 +11,15 @@ output:
 type: docs
 weight: 2
 ---
+
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
-<style>
-  .hvr-sweep-to-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-  }
+{{% materials-header %}}
 
-.hvr-sweep-to-left:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #175676;
-    -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
-  color: white;
-}
-
-.hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-td, th, tr, table {
-    border: 0 !important;
-    border-spacing: 0 !important;
-    border-color: transparent;
-  }
-</style>
-
-
-  
 <!--
 ### Read The Text
 
@@ -108,21 +59,27 @@ td, th, tr, table {
 
 ### Read A Chapter
 
-
-
 <center>
-<table class=" lightable-paper" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
- <thead>
-  <tr>
-   <th style="text-align:left;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Source </th>
-   <th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Link </th>
-  </tr>
- </thead>
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+Source
+</th>
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+Link
+</th>
+</tr>
+</thead>
 <tbody>
-  <tr>
-   <td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> Shadish, W., Cook, T., &amp; Campbell, D. (2002). Statistical Conclusion Validity and Internal Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i> (2nd ed., pp. 33-63). Cengage Learning. </td>
-   <td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;"> <a href="/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
-  </tr>
+<tr>
+<td style="text-align:left;width: 30em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+Shadish, W., Cook, T., & Campbell, D. (2002). Statistical Conclusion Validity and Internal Validity. <i>Experimental and quasi-experimental designs for generalized causal inference</i> (2nd ed., pp. 33-63). Cengage Learning.
+</td>
+<td style="text-align:center;width: 10em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+<a href="/handouts/Shadish,%20Cook,%20and%20Campbell%20(2001)%20Chapter%202.pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a>
+</td>
+</tr>
 </tbody>
 </table>
 </center>

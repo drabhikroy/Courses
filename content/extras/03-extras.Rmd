@@ -15,6 +15,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+`r blogdown::shortcode("materials-header")`
+
 ```{r load_packages, echo = FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(fontawesome)
@@ -71,9 +73,10 @@ kable(textitems,
       col.names = c("", ""),
       escape = FALSE,
       align = 'cc') %>%
-  kable_styling(full_width = FALSE) %>%
+  kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
-  column_spec(2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') 
+  column_spec(2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
+  row_spec(0:2, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </center>
 

@@ -15,6 +15,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+`r blogdown::shortcode("materials-header")`
+
 ```{r load_packages, echo = FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(fontawesome)
@@ -52,10 +54,11 @@ idea = c("<i>Change goes both ways</i>",
       "html", 
       escape = FALSE,
       align = "lll") %>%
+  kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "10em") %>%
   column_spec(2, width = "10em") %>%
-  column_spec(3, width = "20em")
-    # kable_styling(full_width = FALSE)
+  column_spec(3, width = "20em") %>%
+  row_spec(0:3, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 </center>
 

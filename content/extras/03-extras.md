@@ -14,10 +14,12 @@ weight: 1
 editor_options: 
   chunk_output_type: console
 ---
+
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
-
+{{% materials-header %}}
 
 ## Psychedelic Mushrooms May Treat Depression
 
@@ -40,35 +42,43 @@ A more detailed breakdown is given in [Scientific American](https://www.scientif
 
 Take a look at the original publication or download *Trial of Psilocybin versus Escitalopram for Depression* using the links below
 
-
-
 <center>
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:center;">  </th>
-   <th style="text-align:center;">  </th>
-  </tr>
- </thead>
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+</th>
+<th style="text-align:center;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+</th>
+</tr>
+</thead>
 <tbody>
-  <tr>
-   <td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> Link to the paper </td>
-   <td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> PDF of the paper </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032994" target="_blank"><img src="/logos/external-ico.png" alt="Slack icon" width="28"></a> </td>
-   <td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;"> <a href="/handouts/Carhart%E2%80%91Harris,%20et%20al%20(2021).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a> </td>
-  </tr>
+<tr>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+Link to the paper
+</td>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+PDF of the paper
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032994" target="_blank"><img src="/logos/external-ico.png" alt="Slack icon" width="28"></a>
+</td>
+<td style="text-align:center;width: 20em; color: #ffffff !important;vertical-align: middle !important;color: #ffffff !important;background-color: transparent !important;vertical-align: middle !important;">
+<a href="/handouts/Carhart%E2%80%91Harris,%20et%20al%20(2021).pdf" target="_blank"><img src="/logos/pdf-ico.png" alt="Slack icon" width="40"></a>
+</td>
+</tr>
 </tbody>
 </table>
 </center>
 
-## Philosophy of Ethics 
+## Philosophy of Ethics
 
-Even if this week's class was a bit heavy, it is worth looking over the differing and often competing theories associated with ethics. You can download an infographic by clicking on the image below
+Even if this week’s class was a bit heavy, it is worth looking over the differing and often competing theories associated with ethics. You can download an infographic by clicking on the image below
 
 <center>
- <a href="/img/visualizations/Ethical%20Theories.png" target='_blank'>
-         <img alt="Qries" src="/logos/png-ico.png"
+<a href="/img/visualizations/Ethical%20Theories.png" target='_blank'>
+<img alt="Qries" src="/logos/png-ico.png"
          width=30">
 </center>
