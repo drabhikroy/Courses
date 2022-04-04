@@ -117,7 +117,7 @@ Students will be expected to develop the following knowledge, skills, and abilit
 
 <center>
 ```{r echo = FALSE}
-knitr::include_url("/slides/Week 1/Slides-Week-1a.html")
+knitr::include_url("/slides/Week 1/Slides-Week-1a-pres.html")
 ```
 </center>
 
