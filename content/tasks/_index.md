@@ -167,7 +167,7 @@ Outlining Your Literature Review
 L4
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-A First Draft
+The First Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 3/29/22
@@ -182,7 +182,7 @@ A First Draft
 L5
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-A Second Draft
+The Second Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 4/12/22
@@ -197,10 +197,10 @@ A Second Draft
 L6
 </td>
 <td style="text-align:left;width: 20em; color: #ffffff !important;vertical-align: middle !important;">
-A Never Really Final Draft
+The (Never) Final Draft
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
-4/26/22
+5/3/22
 </td>
 <td style="text-align:center;width: 5em; color: #ffffff !important;vertical-align: middle !important;">
 </td>

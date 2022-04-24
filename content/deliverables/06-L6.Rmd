@@ -1,6 +1,6 @@
 ---
-title: "L6: The Final Draft"
-linktitle: "L6: The Final Draft"
+title: "L6: The (Never) Final Draft"
+linktitle: "L6: The (Never) Final Draft"
 toc: true
 output:
   rmarkdown::html_document:
