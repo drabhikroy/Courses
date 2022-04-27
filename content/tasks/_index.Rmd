@@ -104,19 +104,19 @@ read_schedule <-
 
 ```{r message=FALSE, warning=FALSE, eval = TRUE, echo = FALSE}
 kable(read_schedule, 
+      "html", 
       escape = FALSE,
       align = 'clccl') %>%
-  kable_styling(full_width = FALSE,
-                bootstrap_options = c("striped", "hover")) %>%
+  kable_paper(full_width = FALSE) %>%
   column_spec(1, width = "10em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(2, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(3, width = "5em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
   column_spec(4, width = "5em", color = "#ffffff", extra_css = 'vertical-align: middle !important;') %>%
-  column_spec(5, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;')  %>% 
-  row_spec(0, extra_css = 'vertical-align: middle !important;', color = "#ffffff")
+  column_spec(5, width = "20em", color = "#ffffff", extra_css = 'vertical-align: middle !important;')  %>%
+  row_spec(0:8, extra_css = 'vertical-align: middle !important;', color = "#ffffff", background = "transparent")
 ```
 
-<i>Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages, double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.</i>
+<i>Through an iterative process, you will construct a full literature review. The final draft is a narrative between 10-15 pages (L6), double spaced with 12-point Times New Roman font with proper APA 7th Edition formatting. Please note that additional pages including cover pages and a bibliography section are required but do not count as part of the narrative.</i>
 
 ### Presentation
 You will give a two to three minute pitch that addresses the entire breadth of your literature review followed by Q&A session. An evaluation of the work will be contingent on staying within the allotted timeframe, covering adequate content, and addressing questions with proper professional tones and response sets. 
