@@ -18,13 +18,16 @@ editor_options:
 <style>
 ul {
     margin-left: 1.5em
-}
+    }
 
 #center {
-
 text-align: center;
-
 }
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing:0 !important;
+  }
 </style>
 
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 

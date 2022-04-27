@@ -30,7 +30,11 @@ iframe {
 #TableOfContents, .docs-toc-title {
   border-left: 1px solid $sta-primary;
 }
-</style>
+
+td, th, tr, table {
+    border: 0 !important;
+    border-spacing:0 !important;
+  }
 </style>
 
 This section contains descriptions of course tasks. Materials will be posted on a weekly basis. Please note that these pages populate information about course related tasks on the left hand side **when they are assigned**. Due dates are given with the description of each task.
