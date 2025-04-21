@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-01-22"
+date: "2025-04-21"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -137,7 +137,7 @@ B.S. in Mathematics
 
 N/A
 
-*Terminal Study*. 4-Cell Embedding on a `\(n\)`-genus Torus
+*Report*. 4-Cell Embedding on a `\(n\)`-genus Torus
 
 ## <i class="fa-solid fa-pen-to-square" data-fa-mask="fa-solid fa-comment" style="background:white"></i> Professional Experience
 
@@ -151,13 +151,12 @@ Indiana University
 
 <div class="concise">
 
-- <b>Applied Advanced Research Methods</b>. Utilized statistical, machine learning, and qualitative analysis tools to interpret data, generated insights that advanced knowledge and informed evaluation outcomes.
-- <b>Communicated Results</b>. Developed and presented findings, methodologies, and implications to stakeholders and other interdisciplinary groups.
-- <b>Conducted Data Analysis</b>. Applied statistical, machine learning, and qualitative analysis tools to interpret data, generated findings that advanced knowledge and supported evaluation outcomes.
-- <b>Created Accessible Data Visualizations</b>. Designed accessible visualizations with thoughtful consideration of diverse abilities, including colorblindness, to effectively communicate research findings to diverse groups.
-- <b>Developing Competitive Research Proposals</b>. Authored grant proposals by establishing research objectives, designing methodologies, and outlining timelines to secure external funding.
-- <b>Engaged in Stakeholder Collaboration</b>. Partnered with external collaborators using a participatory approach to align research findings with practical applications and guided policy development.
-- <b>Led Research and Evaluation Projects</b>. Directed research and evaluation projects, met project goals, managed budgets, and adhered to timelines.
+- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
+- Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
+- Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
+- Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
+- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
+- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
 
 </div>
 
@@ -171,14 +170,11 @@ West Virginia University
 
 <div class="concise">
 
-- <b>Authored Peer-Reviewed Publications</b>. Published over 10 articles in high-impact journals, advanced knowledge in program evaluation, research methodologies, and applied social sciences.
-- <b>Developed Automated Systems for Data Collection and Analysis</b>. Established automated systems for data collection, cleaning, and analysis, improved efficiency and accuracy across multiple research projects.
-- <b>Designed and Administered Surveys</b>. Created and deployed interactive web-based surveys using HTML, CSS, and JavaScript on the Qualtrics platform, generating over 7,000 responses for various projects and studies.
-- <b>Extracted, Analyzed, and Visualized Data</b>. Processed and visualized data from internal research and remote sources, produced over 20 interactive visualizations using RMarkdown and Shiny for dissemination to academic and interdisciplinary groups.
-- <b>Led and Participated in Evaluations</b>. Contributed to 12 program evaluations and served as lead evaluator on several federally funded grants.
-- <b>Mentored Graduate Students</b>. Advised three Master’s students and one PhD student, guided them through successful degree completion, and supported their professional growth.
-- <b>Presented at National Conferences</b>. Shared research findings at over 20 academic conferences, with the majority at national-level events, reaching diverse groups.
-- <b>Taught Research and Methods-Based Courses</b>. Instructed over 500 students in evaluation, research methods, measurement, and survey design, emphasized practical and analytical skills in data science.
+- Authored ten peer‑reviewed articles and spoke at more than twenty national conferences.
+- Contributed to a dozen program evaluations, leading several and supporting analysis on others; most were funded by federal grants in education or health.
+- Taught courses in evaluation, research methods, measurement, and survey design to several hundred students, with an emphasis on applied data science.
+- Supported three master’s candidates and one doctoral student from proposal to defense, providing ongoing support with research design, coding, and writing.
+- Served on committees at the graduate (master’s and doctoral), program, and college levels.; introduced new courses in data visualization and social network analysis.
 
 </div>
 
@@ -192,12 +188,12 @@ University of Kansas
 
 <div class="concise">
 
-- <b>Administered Tailored Evaluations</b>. Conducted needs assessments and facilitated participatory evaluations, including empowerment-focused projects, for various non-academic units.
-- <b>Created an Evaluation Model for Academic Advising</b>. Integrated a Delphi study with academic advisors, mixed-methods research involving student interviews and surveys, and survival analysis of retention data to create an evaluation model for academic advising.
-- <b>Developed and Implemented Questionnaires</b>. Designed and distributed surveys to 300 university students and staff, achieving response rates ranging from 47% to 91% across multiple studies.
-- <b>Directed Research</b>. Developed statistical models to identify gaps in student retention strategies, leading to a 3% to 5% improvement in continuance rates for specific at-risk groups.
-- <b>Designed Dashboards and Web Applications</b>. Utilized R and Tableau to automate data extraction and visualization processes for student-level data from the university’s Oracle server.
-- <b>Evaluated Program Impacts</b>. Applied qualitative, quantitative, and mixed-methods approaches to analyze the impact of academic advising and engagement initiatives on student persistence, progression, retention, and graduation rates.
+- Merged surveys, interviews, and registrar data to study how advising affected persistence, retention, and graduation.
+- Ran needs assessments and participatory evaluations for advising, student‑life, and support units.
+- Distributed questionnaires to 300 students and staff; response rates fell between 47% and 91%, depending on the project.
+- Built predictive and survival models that flagged at‑risk students, supporting tactics that raised retention by as much as five percentage points.
+- Synthesized findings from Delphi panels, interviews, survey metrics, and time-to-event analysis into a unified framework for evaluating advising quality.
+- Automated data pulls from the Oracle warehouse and refreshed Tableau dashboards with new R scripts.
 
 </div>
 
@@ -341,10 +337,10 @@ Current - 2023
 
 <div class="concise">
 
-- Conducted process, monitoring, and impact evaluations at the program level.
-- Designed and validated survey tools, evaluating the experiences of more than 50 participants.
-- Generated two comprehensive internal evaluation documents and prepared an evaluation proposal aimed at federal funding renewal.
-- Employed a mixed-methods design to independently analyze both longitudinal and cross-sectional data, focusing on the smoking cessation efforts of mothers and the experiences of new or distant caretakers/fathers.
+- Created and validated survey instruments to assess participant experiences, collecting data from more than 50 individuals.
+- Conducted evaluation studies of program activities and authored the evaluation section of the HRSA annual report, as well as a related federal funding renewal proposal.
+- Designed and led program-level evaluations, including process, monitoring, and impact studies.
+- Developed and implemented a mixed-methods study to analyze longitudinal and cross-sectional data, focusing on smoking cessation among mothers and the experiences of new or distant caregivers and fathers.
 
 </div>
 
@@ -363,9 +359,9 @@ Current - 2022
 <div class="concise">
 
 - Administered process evaluations for all program activities.
-- Created and employed a longitudinal mixed-method study to reduce and analyze more than 50 open-ended survey responses and six interview session transcripts, leveraging thematic/content analyses and techniques including HDBSCAN/t-SNE, k-Means, and PCA.
-- Designed and validated two survey tools for assessing progress and evaluating programmatic impact.
-- Produced one in-depth internal evaluation document and crafted evaluation summaries for federal reporting purposes.
+- Created and implemented a longitudinal mixed-method study to analyze more than 50 open-ended survey responses and six interview transcripts, using methods such as HDBSCAN/t-SNE, k-Means, and PCA alongside thematic and content analyses.
+- Developed and validated survey instruments to track progress and evaluate the impact of program activities.
+- Prepared detailed internal evaluation reports and developed summary documents for federal reporting.
 
 </div>
 
@@ -385,12 +381,12 @@ Current - 2022
 
 <div class="concise">
 
+- Advised multiple aspiring graduate students in social data science as they developed and completed independent research projects.
+- Analyzed datasets using using multiple guiding the direction and activities of eight distinct programs.
 - Authored quarterly reports as well as internal and external annual evaluation documents, disseminated both in print and through interactive formats developed in Rmarkdown.
-- Crafted over 100 data visualizations and developed over four Shiny applications for internal and public data exploration, including research collaborations using social network analysis, grant activities pulled from the NCBI API crossed with WVCTSI grant numbers, and dissemination of result and changes in practice within and beyond West Virginia.
-- Designed and disseminated tailored Qualtrics surveys customized with HTML, CSS, and JavaScript, reaching an audience of over 5,000 individuals.
-- Led local and multi-site, multi-cluster evaluation studies for five core medical research and community engagement units.
-- Mentored six graduate students in social data science, steering them through successful research endeavors.
-- Published and presented evaluation findings in academic journals and conferences.
+- Created data visualizations and developed Shiny applications to support internal and public data exploration, including social network analysis for research collaborations, integration of NCBI API data with WVCTSI grant records, and dissemination of findings and practice changes within and beyond West Virginia.
+- Designed and disseminated tailored Qualtrics surveys reaching over 5,000 individuals, with user experience and visual design enhanced through HTML, CSS, and JavaScript.
+- Led local and multi-site evaluation studies that informed policies across five core medical research and health outreach efforts.
 
 </div>
 
@@ -408,9 +404,9 @@ Current - 2022
 
 <div class="concise">
 
-- Developed and distributed two customized interactive surveys using Qualtrics, incorporating CSS and JavaScript, to gather feedback on programmatic activities from a specific group of 24 students.
+- Developed and distributed two customized interactive surveys using Qualtrics, with user experience and visual design enhanced through HTML, CSS, and JavaScript, to collect responses on programmatic activities from a targeted group of 24 students.
+- Led three distinct evaluative studies focusing on student efficacy, engagement, and motivation
 - Produced an external evaluation summary for federal reporting.
-- Spearheaded three distinct evaluative studies focusing on student efficacy, engagement, and motivation.
 
 </div>
 
@@ -429,7 +425,7 @@ Current - 2022
 <div class="concise">
 
 - Conducted longitudinal studies on the experiences of 30 undergraduate students in specialized interdisciplinary courses that integrated social science and engineering, using both surveys and focus group discussions.
-- Mentored 10 engineering faculty members and graduate students in the implementation of research methodologies.
+- Mentored engineering faculty members and graduate students in the implementation of research methodologies.
 
 </div>
 
@@ -447,8 +443,8 @@ Current - 2022
 
 <div class="concise">
 
-- Administered in-depth evaluations of five tools designed for assessment and engagement of the deaf and hard of hearing.
-- Designed and conducted a multi-site evaluation.
+- Evaluated digital tools developed for assessing and engaging individuals who are deaf or hard of hearing.
+- Led a multi-site evaluation that examined program delivery, participant engagement, and outcomes.
 - Produced a detailed external evaluation brief for federal reporting.
 
 </div>
@@ -467,12 +463,12 @@ Current - 2022
 
 <div class="concise">
 
-- Administered longitudinal surveys to over 50 participating faculty members to gauge expectations, gather feedback for improvement, and monitor shifts in DEI attitudes and perceptions.
 - Applied longitudinal NLP text mining techniques such as concordance, LDA topic modeling, and sentiment analysis to analyze and summarize feedback from over 3,000 first-year engineering students concerning grant-related class activities.
-- Contributed to the creation of more than 10 journal publications and academic conference presentation materials.
-- Developed more than 150 static and interactive data visualizations for stakeholder exploration, both internal and external reporting, as well as for presentations and publications.
-- Evaluated all four principal investigators through personnel assessments.
-- Produced two in-depth internal evaluation documents and crafted summaries for external stakeholders and federal reporting purposes.
+- Carried out longitudinal surveys with over 50 faculty participants to understand expectations, gather input for improvement, and track changes in DEI attitudes and perceptions.
+- Created a wide range of static and interactive data visualizations for stakeholder exploration, internal and external reporting, and use in presentations and publications.
+- Contributed to multiple journal articles and academic conference presentations.
+- Performed personnel evaluations of principal investigators to support broader program assessment efforts.
+- Prepared internal evaluation reports and authored the evaluation section of the annual report submitted to the NSF.
 
 </div>
 
@@ -490,13 +486,12 @@ Current - 2022
 
 <div class="concise">
 
-- Administered 32 interviews and focus groups, both cross-sectional and longitudinal, using unstructured and semi-structured formats to gauge the experiences of students and faculty.
-- Carried out process evaluations for four grant-associated programs, leading to enhanced member tracking, increased program efficiency, and heightened participant satisfaction.
-- Constructed and validated tools to measure students’ ability to convey research findings to a lay audience.
+- Carried out 32 interviews and focus groups, both cross-sectional and longitudinal, using unstructured and semi-structured formats to explore the experiences of students and faculty.
+- Conducted process evaluations for multiple grant-funded programs, resulting in improved member tracking, greater program efficiency, and increased participant satisfaction.
+- Created and validated instruments to assess students’ ability to communicate research findings to a general audience.
 - Designed semi-annual adaptive and interactive Qualtrics surveys enhanced with HTML/CSS/JavaScript, securing feedback from over 100 students and faculty with a 95% response rate.
-- Developed predictive models targeting the improvement of student engagement, experience, and retention.
 - Generated data visualizations for assessment and longitudinal studies, bolstering inferential statistical analyses to identify trends and support programmatic enhancements, retention strategies, and satisfaction initiatives.
-- Produced nine in-depth internal evaluation documents and crafted summaries for external stakeholders and federal reporting purposes.
+- Produced internal evaluation reports and prepared summaries for use in external communications and federal reporting.
 
 </div>
 
@@ -958,6 +953,6 @@ N/A
 
 <div id="custom-footnote">
 
-Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on January 22, 2025
+Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on April 21, 2025
 
 </div>

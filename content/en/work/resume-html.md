@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-01-22"
+date: "2025-04-21"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -146,13 +146,12 @@ Indiana University
 
 <div class="concise">
 
-- <b>Applied Advanced Research Methods</b>. Utilized statistical, machine learning, and qualitative analysis tools to interpret data, generated insights that advanced knowledge and informed evaluation outcomes.
-- <b>Communicated Results</b>. Developed and presented findings, methodologies, and implications to stakeholders and other interdisciplinary groups.
-- <b>Conducted Data Analysis</b>. Applied statistical, machine learning, and qualitative analysis tools to interpret data, generated findings that advanced knowledge and supported evaluation outcomes.
-- <b>Created Accessible Data Visualizations</b>. Designed accessible visualizations with thoughtful consideration of diverse abilities, including colorblindness, to effectively communicate research findings to diverse groups.
-- <b>Developing Competitive Research Proposals</b>. Authored grant proposals by establishing research objectives, designing methodologies, and outlining timelines to secure external funding.
-- <b>Engaged in Stakeholder Collaboration</b>. Partnered with external collaborators using a participatory approach to align research findings with practical applications and guided policy development.
-- <b>Led Research and Evaluation Projects</b>. Directed research and evaluation projects, met project goals, managed budgets, and adhered to timelines.
+- <b>Applied Advanced Research Methods</b>. Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
+- <b>Communicated Results</b>. Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
+- <b>Created Accessible Data Visualizations</b>. Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
+- <b>Developing Competitive Research Proposals</b>.Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
+- <b>Engaged in Stakeholder Collaboration</b>. Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
+- <b>Led Research and Evaluation Projects</b>. Monitored budgets, schedules, and task lists to keep projects within scope and on time.
 
 </div>
 
@@ -166,14 +165,13 @@ West Virginia University
 
 <div class="concise">
 
-- <b>Authored Peer-Reviewed Publications</b>. Published over 10 articles in high-impact journals, advanced knowledge in program evaluation, research methodologies, and applied social sciences.
-- <b>Developed Automated Systems for Data Collection and Analysis</b>. Established automated systems for data collection, cleaning, and analysis, improved efficiency and accuracy across multiple research projects.
-- <b>Designed and Administered Surveys</b>. Created and deployed interactive web-based surveys using HTML, CSS, and JavaScript on the Qualtrics platform, generating over 7,000 responses for various projects and studies.
-- <b>Extracted, Analyzed, and Visualized Data</b>. Processed and visualized data from internal research and remote sources, produced over 20 interactive visualizations using RMarkdown and Shiny for dissemination to stakeholder and other interdisciplinary groups.
-- <b>Led and Participated in Evaluations</b>. Contributed to 12 program evaluations and served as lead evaluator on several federally funded grants.
-- <b>Mentored Graduate Students</b>. Advised three Master’s students and one PhD student, guided them through successful degree completion, and supported their professional growth.
-- <b>Presented at National Conferences</b>. Shared research findings at over 20 conferences, with the majority at national-level events, reaching diverse groups.
-- <b>Taught Research and Methods-Based Courses</b>. Instructed over 500 students in evaluation, research methods, measurement, and survey design, emphasized practical and analytical skills in data science.
+- <b>Analyzed and Visualized Data for Diverse Audiences</b>. Processed internal and external data sources and produced more than 20 interactive visualizations using RMarkdown and Shiny to support dissemination.
+- <b>Built Automated Data Systems</b>. Developed systems to automate data collection, cleaning, and analysis, improving efficiency and accuracy across multiple research projects.
+- <b>Designed and Deployed Web-Based Surveys</b>. Developed interactive surveys on the Qualtrics platform, using HTML, CSS, and JavaScript to improve user experience and aesthetics, resulting in over 7,000 responses across multiple studies.
+- <b>Led and Contributed to Federally Funded Evaluations</b>. Participated in 12 program evaluations, leading several and supporting analysis on others, primarily in education and health.
+- <b>Published Peer-Reviewed Publications</b>. Authored 10 peer-reviewed articles and presented findings at over 20 conferences, primarily national, reaching interdisciplinary audiences.
+- <b>Mentored Graduate Students Through Degree Completion</b>. Supported three Master’s and one PhD student through all stages of their graduate work, including research, analysis, and writing.
+- <b>Taught Methods-Focused Courses with a Data Science Emphasis</b>. Delivered courses in evaluation, research methods, measurement, and survey design to several hundred students, emphasizing applied data science and real-world data use.
 
 </div>
 
@@ -187,12 +185,12 @@ University of Kansas
 
 <div class="concise">
 
-- <b>Analyzed the Impact of Student Services</b>. Conducted qualitative and quantitative analysis to assess the effect of advising and engagement initiatives on student retention and graduation outcomes.
-- <b>Built Web Applications and Dashboards</b>. Automated data extraction and visualization using R and Tableau, improving access and reporting for student-level data from the university’s Oracle server.
-- <b>Conducted Research to Improve Retention</b>. Developed statistical models that identified gaps in student retention strategies, contributing to a 3% to 5% increase in retention rates for at-risk groups.
-- <b>Designed and Executed Questionnaires</b>. Developed and implemented surveys for approximately 300 students and staff, achieving response rates between 47% and 91% across various projects.
-- <b>Developed an Evaluation Model for Advising</b>. Created a comprehensive evaluation model by integrating a Delphi study, mixed-methods research, and survival analysis of student retention data.
-- <b>Led Tailored Evaluations</b>. Conducted needs assessments and led participatory evaluations for non-academic units, focusing on data-driven insights and stakeholder empowerment.
+- <b>Analyzed the Impact of Student Services</b>. Merged surveys, interviews, and registrar data to study how advising affected persistence, retention, and graduation.
+- <b>Built Web Applications and Dashboards</b>. Automated data pulls from the Oracle warehouse and refreshed Tableau dashboards with new R scripts.
+- <b>Conducted Research to Improve Retention</b>. Built predictive and survival models that flagged at‑risk students, supporting tactics that raised retention by as much as five percentage points.
+- <b>Developed an Evaluation Model for Advising</b>. Synthesized findings from Delphi panels, interviews, survey metrics, and time-to-event analysis into a unified framework for evaluating advising quality.
+- <b>Designed and Executed Questionnaires</b>. Distributed questionnaires to 300 students and staff; response rates fell between 47% and 91%, depending on the project.
+- <b>Led Tailored Evaluations</b>. Ran needs assessments and participatory evaluations for advising, student‑life, and support units.
 
 </div>
 
@@ -210,29 +208,14 @@ Current - 2023
 
 <div class="concise">
 
-- Conducted process, monitoring, and impact evaluations at the program level.
-- Designed and validated survey tools, evaluating the experiences of more than 50 participants.
-- Generated two comprehensive internal evaluation documents and prepared an evaluation proposal aimed at federal funding renewal.
-- Conducted a comparative mixed-methods study examining the experiences of mothers participating in two distinct smoking cessation programs.
+- Created and validated survey instruments to assess participant experiences, collecting data from more than 50 individuals.
+- Conducted evaluation studies of program activities and authored the evaluation section of the HRSA annual report, as well as a related federal funding renewal proposal.
+- Designed and led program-level evaluations, including process, monitoring, and impact studies.
+- Developed and implemented a mixed-methods study to analyze longitudinal and cross-sectional data, focusing on smoking cessation among mothers and the experiences of new or distant caregivers and fathers.
 
 </div>
 
 </div>
-
-<!--
-&#10;### <span class="indented-title"><i>Program Evaluator & Mixed Methods Analyst</i> - Teaching Science with Computational Thinking: Preparing Preservice Elementary Educators of the Future STEM Workforce ([*2019-NSF 2142274*](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2142274&HistoricalAwards=false) Total Award: *$294,958.00*)</span>
-&#10;<span class="indented-title">West Virginia University</span>
-&#10;&nbsp;&nbsp;Morgantown, WV
-&#10;Current - 2022
-&#10;<div class="indented-section">
-&#10;::: concise
-- Administered process evaluations for all program activities.
-- Conducted a longitudinal mixed-method study, analyzing over 50 surveys and six interviews using thematic analysis and machine learning.
-- Designed and validated two survey tools for assessing progress and evaluating programmatic impact.
-- Produced one in-depth internal evaluation document and crafted evaluation summaries for federal reporting purposes.
-:::
-&#10;</div>
-&#10;-->
 
 ### <i>Community Program Evaluator & Data Scientist</i><br>WVCTSI: West Virginia Clinical and Translational Science Institute ([*2017-NIH 2U54GM104942-02*](https://reporter.nih.gov/project-details/9362155) Total Award: *\$20,000,000*)
 
@@ -244,15 +227,15 @@ West Virginia University
 
 <div class="concise">
 
-- Created over 100 data visualizations and developed four Shiny applications for comprehensive data exploration and reporting.
-- Developed and disseminated tailored Qualtrics surveys, incorporating HTML, CSS, and JavaScript, reaching over 5,000 individuals.
-- Directed local and multi-site evaluation studies for five core medical research and community engagement units.
-- Mentored multiple graduate students in social data science, leading them through successful research projects.
-- Produced quarterly and annual evaluations, disseminating findings in both print and interactive formats via Rmarkdown.
+- Authored quarterly reports as well as internal and external annual evaluation documents, disseminated both in print and through interactive formats developed in Rmarkdown.
+- Created data visualizations and developed Shiny applications support internal and public data exploration.
+- Designed and disseminated tailored Qualtrics surveys reaching over 5,000 individuals, with user experience and visual design enhanced through HTML, CSS, and JavaScript
+- Led local and multi-site evaluation studies that informed policies across five core medical research and health outreach efforts.
+- Mentored multiple graduate students in social data science as they developed and completed independent research projects.
 - Published and presented research on WVCTSI programs in academic journals and at conferences.
 
 </div>
 
 ## Disclaimer
 
-Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on January 22, 2025
+Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on April 21, 2025
