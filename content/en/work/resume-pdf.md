@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-04-21"
+date: "2025-05-06"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -33,49 +33,47 @@ weight: NULL
 
 ## Expertise
 
-- <b>Data visualization</b>
+- <b>Program evaluation integrating traditional and machine learning methods</b>
 
-- <b>Markup using</b> `\(\LaTeX\)`
-
-- <b>Program evaluations integrating both traditional and machine learning methods</b>
-
-- <b>Quantitative, qualitative, and mixed method studies</b>
+- <b>Quantitative, qualitative, and mixed-methods research</b>
 
 - <i style="color:#3365B3; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project fa-lg"></i> <b>programming</b>
 
-- <b>Social network analysis</b>
+- <b>Statistical modeling and inference</b>
 
-- <b>Survey design, administration, and research</b>
+- <b>Data visualization</b>
 
-- <b>Statistical modeling and analysis</b>
+- <b>Survey methodology spanning design, deployment, and analysis</b>
 
-- <b>Text analytics</b>
+- <b>Interpretive and computational text analysis</b>
 
-- <b>Web application development and static/dynamic reporting using</b>
+- <b>Web application development and reporting using</b>
 
-  <div class="holder">
+  <div class="holder" style="margin-bottom: -12px;">
+
+  <div class="left">
+
+  <img src='img/blogdown-logo.png' alt='Blogdown hex' width='70%'>
 
   </div>
 
-<div class="left">
+  <div class="middle">
 
-<img src='img/blogdown-logo.png' alt='Blogdown hex' width='70%'>
+  <img src='img/rmarkdown.png' alt='Rmarkdown hex' width='70%'>
 
-</div>
+  </div>
 
-<div class="middle">
+  <div class="right">
 
-<img src='img/rmarkdown.png' alt='Rmarkdown hex' width='70%'>
+  <img src='img/shiny-logo.png' alt='Shiny hex' width='70%'>
 
-</div>
+  </div>
 
-<div class="right">
+  </div>
 
-<img src='img/shiny-logo.png' alt='Shiny hex' width='70%'>
+- <b>Social network analysis</b>
 
-</div>
-
-</div>
+- <b>Technical writing and markup using</b> `\(\LaTeX\)`
 
 # Main
 
@@ -144,7 +142,7 @@ Indiana University
 - <b>Applied Advanced Research Methods</b>. Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
 - <b>Communicated Results</b>. Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
 - <b>Created Accessible Data Visualizations</b>. Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- <b>Developing Competitive Research Proposals</b>.Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
+- <b>Developed Competitive Research Proposals</b>.Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
 - <b>Engaged in Stakeholder Collaboration</b>. Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
 - <b>Led Research and Evaluation Projects</b>. Monitored budgets, schedules, and task lists to keep projects within scope and on time.
 
@@ -223,8 +221,8 @@ West Virginia University
 <div class="concise">
 
 - Authored quarterly reports as well as internal and external annual evaluation documents, disseminated both in print and through interactive formats developed in Rmarkdown.
-- Created data visualizations and developed Shiny applications support internal and public data exploration.
-- Designed and disseminated tailored Qualtrics surveys reaching over 5,000 individuals, with user experience and visual design enhanced through HTML, CSS, and JavaScript
+- Created data visualizations and developed Shiny applications to support internal and public data exploration.
+- Designed and disseminated tailored Qualtrics surveys reaching over 5,000 individuals, with user experience and visual design enhanced through HTML, CSS, and JavaScript.
 - Led local and multi-site evaluation studies that informed policies across five core medical research and health outreach efforts.
 - Mentored multiple graduate students in social data science as they developed and completed independent research projects.
 - Published and presented research on WVCTSI programs in academic journals and at conferences.
@@ -238,6 +236,6 @@ West Virginia University
 
 <div id="custom-footnote">
 
-Made with    <i style="color:#3365B3; margin-top: 2px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on April 21, 2025
+Made with    <i style="color:#3365B3; margin-top: 2px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on May 06, 2025
 
 </div>

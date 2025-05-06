@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-04-21"
+date: "2025-05-06"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -33,49 +33,48 @@ weight: NULL
 
 ## Expertise
 
-- <b>Data visualization</b>
+- <b>Program evaluation integrating traditional and machine learning methods</b>
 
-- <b>Markup using</b> `\(\LaTeX\)`
-
-- <b>Program evaluations integrating both traditional and machine learning methods</b>
-
-- <b>Quantitative, qualitative, and mixed method studies</b>
+- <b>Quantitative, qualitative, and mixed-methods research</b>
 
 - <i style="color:#3365B3; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project fa-lg"></i> <b>programming</b>
 
-- <b>Social network analysis</b>
+- <b>Statistical modeling and inference</b>
 
-- <b>Survey design, administration, and research</b>
+- <b>Data visualization</b>
 
-- <b>Statistical modeling and analysis</b>
+- <b>Survey methodology spanning design, deployment, and analysis</b>
 
-- <b>Text analytics</b>
+- <b>Interpretive and computational text analysis</b>
 
-- <b>Web application development and static/dynamic reporting using</b>
+- <b>Web application development and reporting using</b>
 
-  <div class="holder">
+  <div class="holder" style="margin-bottom: -12px;">
+
+  <div class="left">
+
+  <img src='img/blogdown-logo.png' alt='Blogdown hex' width='70%'>
 
   </div>
 
-<div class="left">
+  <div class="middle">
 
-<img src='img/blogdown-logo.png' alt='Blogdown hex' width='70%'>
+  <img src='img/rmarkdown.png' alt='Rmarkdown hex' width='70%'>
 
-</div>
+  </div>
 
-<div class="middle">
+  <div class="right">
 
-<img src='img/rmarkdown.png' alt='Rmarkdown hex' width='70%'>
+  <img src='img/shiny-logo.png' alt='Shiny hex' width='70%'>
 
-</div>
+  </div>
 
-<div class="right">
+  </div>
 
-<img src='img/shiny-logo.png' alt='Shiny hex' width='70%'>
+- <b>Social network analysis</b>
 
-</div>
+- <b>Technical writing and markup using</b> `\(\LaTeX\)`
 
-</div>
 <br>
 <br>
 <br>
@@ -953,6 +952,6 @@ N/A
 
 <div id="custom-footnote">
 
-Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on April 21, 2025
+Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on May 06, 2025
 
 </div>

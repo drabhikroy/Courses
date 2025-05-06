@@ -78,23 +78,24 @@ fa_i(name = "arrow-down", fill = "#3365B3")
 
 
 <table>
-    <tr><th>Content, cluster, and social network analysis</b></th></tr> 
-    <tr><th>Data visualization</th></tr> 
-    <tr><th>Markup using</b> <code>$\LaTeX$</code> </th></tr>
-    <tr><th>Program evaluations integrating both traditional and machine learning methods</th></tr>
-    <tr><th>Quantitative, qualitative, and mixed method studies</th></tr>
-    <tr><th></b><i style="color:#3365B3;" class="fab fa-r-project fa-lg"></i> programming</th></tr> 
-    <tr><th>Small- and large-scale survey design, administration, and research</th></tr>
-    <tr><th>Statistical modeling and analysis</th></tr>
-    <tr><th>Program evaluation methods using machine learning techniques</th></tr>
-    <tr><th>Web application development and static/dynamic reporting using</b></th></tr> 
+  <tr><th>Program evaluation integrating traditional and machine learning methods</th></tr>
+  <tr><th>Quantitative, qualitative, and mixed-methods research</th></tr>
+  <tr><th><i style="color:#3365B3;" class="fab fa-r-project fa-lg"></i> programming</th></tr>
+  <tr><th>Statistical modeling and inference</th></tr>
+  <tr><th>Data visualization</th></tr>
+  <tr><th>Survey methodology spanning design, deployment, and analysis</th></tr>
+  <tr><th>Interpretive and computational text analysis</th></tr>
+  <tr><th>Social network analysis</th></tr>
+  <tr><th>Technical writing and markup using <code>$\LaTeX$</code></th></tr>
+  <tr><th>Web application development and reporting using:</th></tr>
 </table>
-<div class="holder" style="margin-top: -25px">
 
-<div class="About" id="about">
- &nbsp&nbsp&nbsp<img src='/img/logos/shiny-logo.png' alt='Shiny hex' style="width:75px">&nbsp;&nbsp;
- <img src='/img/logos/rmarkdown.png' alt='Rmarkdown hex' style="width:75px">
- &nbsp&nbsp<img src='/img/logos/blogdown-logo.png' alt='Blogdown hex' style="width:75px">
+<div class="holder" style="margin-top: -25px">
+  <div class="About" id="about">
+    &nbsp;&nbsp;<img src='/img/logos/shiny-logo.png' alt='Shiny hex' style="width:75px">
+    &nbsp;&nbsp;<img src='/img/logos/rmarkdown.png' alt='Rmarkdown hex' style="width:75px">
+    &nbsp;&nbsp;<img src='/img/logos/blogdown-logo.png' alt='Blogdown hex' style="width:75px">
+  </div>
 </div>
 
 </div>
