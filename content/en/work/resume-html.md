@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-05-06"
+date: "2025-07-22"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -134,6 +134,25 @@ N/A
 
 ## <i class="fa-solid fa-pen-to-square" data-fa-mask="fa-solid fa-comment" style="background:white"></i> Professional Experience
 
+### <i>Independent Evaluation Consultant</i>
+
+N/A
+
+  Bloomington, IN
+
+2025 - Present
+
+<div class="concise">
+
+- <b>Collaborate with Program Teams to Design and Execute Evaluations</b>. Partner with federally funded programs in health and education to plan, conduct, and report on evaluation activities.
+- <b>Communicate Findings Across Audiences</b>. DDevelop written reports, federal submissions, and journal manuscripts summarizing evaluation results, and prepare tailored materials for program staff and external stakeholders.
+- <b>Create Static, Active, and Interactive Visualizations</b>. Build fixed, animated, and user-driven data visualizations using R and Shiny to support reporting, exploration, and decision-making.
+- <b>Develop and Validate Survey Instruments</b>.Design, test, and refine tools to collect data on participant experiences, program quality, and implementation outcomes.
+- <b>Lead Data Analysis and Mixed-Methods Studies</b>. Analyze quantitative and qualitative data, including longitudinal and cross-sectional sources, to assess progress and guide program decisions.
+- <b>Support Evaluation of Federal Grant Programs</b>. Contribute to evaluations of HRSA’s Healthy Start Initiative and an NSF-funded project preparing preservice STEM educators.
+
+</div>
+
 ### <i>Associate Research Scientist</i>
 
 Indiana University
@@ -147,7 +166,7 @@ Indiana University
 - <b>Applied Advanced Research Methods</b>. Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
 - <b>Communicated Results</b>. Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
 - <b>Created Accessible Data Visualizations</b>. Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- <b>Developed Competitive Research Proposals</b>.Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
+- <b>Developed Competitive Research Proposals</b>. Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
 - <b>Engaged in Stakeholder Collaboration</b>. Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
 - <b>Led Research and Evaluation Projects</b>. Monitored budgets, schedules, and task lists to keep projects within scope and on time.
 
@@ -236,4 +255,4 @@ West Virginia University
 
 ## Disclaimer
 
-Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on May 06, 2025
+Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on July 22, 2025

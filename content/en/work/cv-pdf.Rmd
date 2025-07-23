@@ -138,6 +138,23 @@ N/A
 <i class="fa-solid fa-pen-to-square" data-fa-mask="fa-solid fa-comment" style="background:white"></i>  Professional Experience {data-icon=NULL}
 --------------------------------------------------------------------------------
 
+### Independent Evaluation Consultant
+
+N/A
+
+&nbsp;&nbsp;Bloomington, IN
+
+2025 - Present
+
+::: concise
+- Create static (fixed), active (automated or animated), and interactive (user-driven) data visualizations in R and Shiny to communicate findings across multiple audiences.
+- Develop and validate survey instruments, implement mixed-methods studies, and author federal reporting documents.
+- Lead evaluation studies, conduct data analysis, and report findings for federally funded programs in health and education.
+- Partner with program staff and academic researchers to design and carry out evaluations that inform practice and policy.
+- Prepare journal manuscripts based on evaluation findings for submission to peer-reviewed publications.
+- Support HRSA’s Healthy Start Initiative and an NSF-funded teacher preparation program in computational thinking.
+:::
+
 ### Associate Research Scientist
 
 Indiana University
@@ -147,12 +164,12 @@ Indiana University
 2025 - 2024
 
 ::: concise
-- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
+- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
+- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
 - Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
 - Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
 - Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
-- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
+- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
 :::
 
 ### Assistant Professor

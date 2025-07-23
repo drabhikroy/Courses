@@ -1,7 +1,7 @@
 ---
 title: "Abhik Ranjan Roy"
 author: Abhik Ranjan Roy
-date: "2025-05-06"
+date: "2025-07-22"
 output:
   pagedown::html_resume:
     self_contained: true
@@ -140,6 +140,25 @@ N/A
 
 ## <i class="fa-solid fa-pen-to-square" data-fa-mask="fa-solid fa-comment" style="background:white"></i> Professional Experience
 
+### Independent Evaluation Consultant
+
+N/A
+
+  Bloomington, IN
+
+2025 - Present
+
+<div class="concise">
+
+- Create static (fixed), active (automated or animated), and interactive (user-driven) data visualizations in R and Shiny to communicate findings across multiple audiences.
+- Develop and validate survey instruments, implement mixed-methods studies, and author federal reporting documents.
+- Lead evaluation studies, conduct data analysis, and report findings for federally funded programs in health and education.
+- Partner with program staff and academic researchers to design and carry out evaluations that inform practice and policy.
+- Prepare journal manuscripts based on evaluation findings for submission to peer-reviewed publications.
+- Support HRSA’s Healthy Start Initiative and an NSF-funded teacher preparation program in computational thinking.
+
+</div>
+
 ### Associate Research Scientist
 
 Indiana University
@@ -150,12 +169,12 @@ Indiana University
 
 <div class="concise">
 
-- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
+- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
+- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
 - Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
 - Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
 - Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
-- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
+- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
 
 </div>
 
@@ -952,6 +971,6 @@ N/A
 
 <div id="custom-footnote">
 
-Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on May 06, 2025
+Made with    <i style="color:#3365B3; margin-top: 3px; margin-left: -7px; margin-right: -5px;" class="fab fa-r-project"></i>   : <a href="https://github.com/drabhikroy/Courses/blob/iam/content/en/work/resume-html.Rmd" target="&#39;_blank">Source code</a>. Last updated on July 22, 2025
 
 </div>
