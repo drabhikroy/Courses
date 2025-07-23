@@ -144,7 +144,7 @@ N/A
 
 &nbsp;&nbsp;Bloomington, IN
 
-2025 - Present
+Present - 2025
 
 ::: concise
 - Create static (fixed), active (automated or animated), and interactive (user-driven) data visualizations in R and Shiny to communicate findings across multiple audiences.
