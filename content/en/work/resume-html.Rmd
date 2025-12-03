@@ -38,11 +38,11 @@ Aside
 Contact Information {#contact}
 --------------------------------------------------------------------------------
 
-- `r fontawesome::fa("fas fa-at", fill = "#e7c9a9")`&nbsp;&nbsp;&nbsp;&nbsp;abhikrroy@protonmail.com
-- `r fontawesome::fa("fab fa-github", fill = "#4183c4")`&nbsp;&nbsp;&nbsp;&nbsp;[github.com/drabhikroy](https://github.com/drabhikroy)
-- `r fontawesome::fa("far fa-window-maximize", fill = "#5cb2b8")`&nbsp;&nbsp;&nbsp;&nbsp;[abhikroyphd.com](https://abhikroyphd.com)
-- `r fontawesome::fa("fas fa-mobile", fill = "#c4becf", margin_left = "2.1px")` &nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+1 812-727-7774">+1 812-727-7774</a>
-- `r fontawesome::fa("fab fa-orcid", fill = "#aecc54")`&nbsp;&nbsp;&nbsp;&nbsp;[0000-0002-7085-8964](https://orcid.org/0000-0002-7085-8964)
+- `r fontawesome::fa("fas fa-at", fill = "#161618")`&nbsp;&nbsp;&nbsp;&nbsp;abhikrroy@protonmail.com
+- `r fontawesome::fa("fab fa-github", fill = "#161618")`&nbsp;&nbsp;&nbsp;&nbsp;[github.com/drabhikroy](https://github.com/drabhikroy)
+- `r fontawesome::fa("fab fa-linkedin", fill = "#161618")`&nbsp;&nbsp;&nbsp;&nbsp;[linkedin.com/in/abhikrroy](https://www.linkedin.com/in/abhikrroy/)
+- `r fontawesome::fa("fas fa-mobile", fill = "#161618", margin_left = "x2.1px")`&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+18127277774">+1 812-727-7774</a>
+- `r fontawesome::fa("fab fa-orcid", fill = "#161618")`&nbsp;&nbsp;&nbsp;&nbsp;[0000-0002-7085-8964](https://orcid.org/0000-0002-7085-8964)
 
 
 Expertise {#skills}
@@ -78,6 +78,14 @@ Expertise {#skills}
 - <b>Social network analysis</b>
 
 - <b>Technical writing and markup using</b> $\LaTeX$
+
+
+Technical Skills {#technical-skills}
+--------------------------------------------------------------------------------
+
+- <b>Methods:</b> Longitudinal analysis, survival analysis, predictive modeling, NLP, topic modeling, clustering
+
+- <b>Tools:</b> Qualtrics, Shiny, Tableau, SQL
 
 Main
 ================================================================================
@@ -143,32 +151,15 @@ N/A
 
 &nbsp;&nbsp;Bloomington, IN
 
-Present - 2025
+Present - 2023
 
 ::: concise
-- <b>Collaborate with Program Teams to Design and Execute Evaluations</b>. Partner with federally funded programs in health and education to plan, conduct, and report on evaluation activities.
-- <b>Communicate Findings Across Audiences</b>. DDevelop written reports, federal submissions, and journal manuscripts summarizing evaluation results, and prepare tailored materials for program staff and external stakeholders.
-- <b>Create Static, Active, and Interactive Visualizations</b>. Build fixed, animated, and user-driven data visualizations using R and Shiny to support reporting, exploration, and decision-making.
-- <b>Develop and Validate Survey Instruments</b>.Design, test, and refine tools to collect data on participant experiences, program quality, and implementation outcomes.
-- <b>Lead Data Analysis and Mixed-Methods Studies</b>. Analyze quantitative and qualitative data, including longitudinal and cross-sectional sources, to assess progress and guide program decisions.
-- <b>Support Evaluation of Federal Grant Programs</b>. Contribute to evaluations of HRSA’s Healthy Start Initiative and an NSF-funded project preparing preservice STEM educators.
-:::
-
-### <i>Associate Research Scientist</i>
-
-Indiana University
-
-&nbsp;&nbsp;Bloomington, IN
-
-2025 - 2024
-
-::: concise
-- <b>Applied Advanced Research Methods</b>. Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
-- <b>Communicated Results</b>. Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
-- <b>Created Accessible Data Visualizations</b>. Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- <b>Developed Competitive Research Proposals</b>. Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
-- <b>Engaged in Stakeholder Collaboration</b>. Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
-- <b>Led Research and Evaluation Projects</b>. Monitored budgets, schedules, and task lists to keep projects within scope and on time.
+- <b>Collaborate with Program Teams to Design and Execute Evaluations</b>. Partner with federally funded programs in health and education to plan, conduct, and report on evaluation activities.  
+- <b>Communicate Findings Across Audiences</b>. Develop written reports, federal submissions, and journal manuscripts summarizing evaluation results, and prepare tailored materials for program staff and external stakeholders.  
+- <b>Create Static, Active, and Interactive Visualizations</b>. Build fixed, animated, and user-driven data visualizations using R and Shiny to support reporting, exploration, and decision-making.  
+- <b>Develop and Validate Survey Instruments</b>. Design, test, and refine tools to collect data on participant experiences, program quality, and implementation outcomes.  
+- <b>Lead Data Analysis and Mixed-Methods Studies</b>. Analyze quantitative and qualitative data, including longitudinal and cross-sectional sources, to assess progress and guide program decisions.  
+- <b>Support Research and Evaluation</b>. Contribute to federally, state, and foundation-funded initiatives in health, education, and community development, including HRSA’s Healthy Start Initiative, an NSF-supported teacher preparation program, and other multi-site applied studies.
 :::
 
 ### <i>Assistant Professor</i>
@@ -201,9 +192,9 @@ University of Kansas
 ::: concise
 - <b>Analyzed the Impact of Student Services</b>. Merged surveys, interviews, and registrar data to study how advising affected persistence, retention, and graduation.
 - <b>Built Web Applications and Dashboards</b>. Automated data pulls from the Oracle warehouse and refreshed Tableau dashboards with new R scripts.
-- <b>Conducted Research to Improve Retention</b>. Built predictive and survival models that flagged at‑risk students, supporting tactics that raised retention by as much as five percentage points.
+- <b>Conducted Research to Improve Retention</b>. Built predictive and survival models using logistic regression and time-to-event analysis that flagged at‑risk students, informing interventions that raised retention by up to five percentage points.
 - <b>Developed an Evaluation Model for Advising</b>. Synthesized findings from Delphi panels, interviews, survey metrics, and time-to-event analysis into a unified framework for evaluating advising quality.
-- <b>Designed and Executed Questionnaires</b>. Distributed questionnaires to 300 students and staff; response rates fell between 47% and 91%, depending on the project.
+- <b>Designed and Executed Questionnaires</b>. Distributed questionnaires to 300 students and staff; achieved response rates as high as 91%.
 - <b>Led Tailored Evaluations</b>. Ran needs assessments and participatory evaluations for advising, student‑life, and support units.
 :::
 

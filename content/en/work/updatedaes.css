@@ -169,3 +169,51 @@ p + ul {
     margin-bottom: 0.1in;
     margin-left: 0px;
 }
+
+/* --- Contact icon column alignment (works in PDF) --- */
+
+/* Match the list no matter how pagedown wraps the section */
+section#contact ul,
+.level2#contact ul,
+h2#contact + ul,
+h2#contact + hr + ul {
+    list-style: none;
+    padding-left: 0 !important; /* override your .aside ul padding */
+    margin: 0;
+}
+
+/* Make each icon the same fixed width so the column lines up */
+section#contact li > i,
+.level2#contact li > i,
+h2#contact + ul > li > i,
+h2#contact + hr + ul > li > i,
+section#contact li > svg,
+.level2#contact li > svg,
+h2#contact + ul > li > svg,
+h2#contact + hr + ul > li > svg {
+    display: inline-block; /* participates as a box */
+    width: 1.4em; /* fixed icon column */
+    min-width: 1.4em;
+    text-align: center; /* center the icon inside its box */
+    margin-right: 0.5em; /* gap before the text */
+    vertical-align: middle; /* align with the text baseline */
+}
+
+/* If Font Awesome's fixed-width class is present, use it as well */
+section#contact .fa-fw,
+.level2#contact .fa-fw,
+h2#contact + ul .fa-fw,
+h2#contact + hr + ul .fa-fw {
+    width: 1.4em;
+    min-width: 1.4em;
+    text-align: center;
+}
+
+/* Keep colors in print */
+@media print {
+    svg,
+    i {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

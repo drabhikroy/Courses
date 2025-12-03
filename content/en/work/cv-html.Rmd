@@ -38,11 +38,11 @@ Aside
 Contact Information {#contact}
 --------------------------------------------------------------------------------
 
-- `r fontawesome::fa("fas fa-at", fill = "#e7c9a9")`&nbsp;&nbsp;&nbsp;&nbsp;abhikrroy@protonmail.com
-- `r fontawesome::fa("fab fa-github", fill = "#4183c4")`&nbsp;&nbsp;&nbsp;&nbsp;[github.com/drabhikroy](https://github.com/drabhikroy)
-- `r fontawesome::fa("far fa-window-maximize", fill = "#5cb2b8")`&nbsp;&nbsp;&nbsp;&nbsp;[abhikroyphd.com](https://abhikroyphd.com)
-- `r fontawesome::fa("fas fa-mobile", fill = "#c4becf", margin_left = "2.1px")` &nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+1 812-727-7774">+1 812-727-7774</a>
-- `r fontawesome::fa("fab fa-orcid", fill = "#aecc54")`&nbsp;&nbsp;&nbsp;&nbsp;[0000-0002-7085-8964](https://orcid.org/0000-0002-7085-8964)
+- `r fontawesome::fa_i("at", fill = "#e7c9a9", additional_classes = "fa-fw")`&nbsp;&nbsp;abhikrroy@protonmail.com
+- `r fontawesome::fa_i("github", fill = "#4183c4", additional_classes = "fa-fw")`&nbsp;&nbsp;[github.com/drabhikroy](https://github.com/drabhikroy)  
+- `r fontawesome::fa_i("linkedin", fill = "#0077B5", additional_classes = "fa-fw")`&nbsp;&nbsp;[linkedin.com/in/abhikrroy](https://www.linkedin.com/in/abhikrroy/)  
+- `r fontawesome::fa_i("mobile", fill = "#c4becf", additional_classes = "fa-fw")`&nbsp;&nbsp;<a href="tel:+1 812-727-7774">+1 812-727-7774</a>  
+- `r fontawesome::fa_i("orcid", fill = "#aecc54", additional_classes = "fa-fw")`&nbsp;&nbsp;[0000-0002-7085-8964](https://orcid.org/0000-0002-7085-8964)
 
 
 Expertise {#skills}
@@ -130,32 +130,15 @@ N/A
 
 &nbsp;&nbsp;Bloomington, IN
 
-Present - 2025
+Present - 2023
 
 ::: concise
-- Create static (fixed), active (automated or animated), and interactive (user-driven) data visualizations in R and Shiny to communicate findings across multiple audiences.
-- Develop and validate survey instruments, implement mixed-methods studies, and author federal reporting documents.
-- Lead evaluation studies, conduct data analysis, and report findings for federally funded programs in health and education.
-- Partner with program staff and academic researchers to design and carry out evaluations that inform practice and policy.
-- Prepare journal manuscripts based on evaluation findings for submission to peer-reviewed publications.
-- Support HRSA’s Healthy Start Initiative and an NSF-funded teacher preparation program in computational thinking.
-:::
-
-### Associate Research Scientist
-
-Indiana University
-
-&nbsp;&nbsp;Bloomington, IN
-
-2025 - 2024
-
-::: concise
-- Collaborated with external partners in participatory sessions, translating evidence into program guidance and policy draft language.
-- Monitored budgets, schedules, and task lists to keep projects within scope and on time.
-- Prepared grant proposals outlining objectives, study designs, budgets, and timelines for external‑funding submissions.
-- Presented methods, results, and practical implications to stakeholders through slide decks, briefs, and small‑group discussions.
-- Produced color‑safe charts, dashboards, and infographics that remained readable for viewers with diverse visual abilities.
-- Used statistical, machine learning, and qualitative approaches to analyze raw data and generate meaningful evaluation findings.
+- Create static (fixed), active (automated or animated), and interactive (user-driven) data visualizations in R and Shiny to communicate findings across multiple audiences.  
+- Develop and validate survey instruments, implement mixed-methods studies, and author federal reporting documents.  
+- Lead evaluation studies, conduct data analysis, and report findings for federally funded programs in health and education.  
+- Partner with program staff and academic researchers to design and carry out evaluations that inform practice and policy.  
+- Prepare journal manuscripts based on evaluation findings for submission to peer-reviewed publications.  
+- Support research and evaluation for federally, state, and foundation-funded initiatives in health, education, and community development, including HRSA’s Healthy Start Initiative, an NSF-supported teacher preparation program, and other multi-site applied studies.  
 :::
 
 ### Associate Professor
@@ -172,7 +155,6 @@ West Virginia University
 - Taught courses in evaluation, research methods, measurement, and survey design to several hundred students, with an emphasis on applied data science.
 - Supported three master’s candidates and one doctoral student from proposal to defense, providing ongoing support with research design, coding, and writing.
 - Served on committees at the graduate (master’s and doctoral), program, and college levels.; introduced new courses in data visualization and social network analysis.
-
 :::
 
 ### Data Analyst
@@ -186,7 +168,7 @@ University of Kansas
 ::: concise
 - Merged surveys, interviews, and registrar data to study how advising affected persistence, retention, and graduation.
 - Ran needs assessments and participatory evaluations for advising, student‑life, and support units.
-- Distributed questionnaires to 300 students and staff; response rates fell between 47% and 91%, depending on the project.
+- Distributed questionnaires to 300 students and staff; achieved response rates as high as 91%.
 - Built predictive and survival models that flagged at‑risk students, supporting tactics that raised retention by as much as five percentage points.
 - Synthesized findings from Delphi panels, interviews, survey metrics, and time-to-event analysis into a unified framework for evaluating advising quality.
 - Automated data pulls from the Oracle warehouse and refreshed Tableau dashboards with new R scripts.
